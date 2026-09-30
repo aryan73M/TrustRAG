@@ -9,13 +9,14 @@ from sentence_transformers import SentenceTransformer
 # Configuration
 # --------------------------------------------------
 
-DATA_FILE = Path("data/chunks.json")
+DATA_FILE = Path("data/chunks_v2.json")
 CHROMA_DIR = "./chroma_db"
 
 MODEL_NAME = "BAAI/bge-small-en-v1.5"
-COLLECTION_NAME = "chunks_350"
+COLLECTION_NAME = "chunks_350_v2"
 
 BATCH_SIZE = 64
+
 model = SentenceTransformer(MODEL_NAME)
 
 
@@ -33,6 +34,7 @@ def load_chunks():
 # --------------------------------------------------
 
 def build_index():
+
     print("Loading embedding model...")
 
     print("Loading chunks...")
@@ -41,31 +43,50 @@ def build_index():
     print(f"Total chunks: {len(chunks)}")
 
     # Create persistent Chroma database
-    client = chromadb.PersistentClient(path=CHROMA_DIR)
+    client = chromadb.PersistentClient(
+        path=CHROMA_DIR
+    )
 
-    # Create/get collection
+    # Create/get NEW v2 collection
     collection = client.get_or_create_collection(
         name=COLLECTION_NAME
     )
 
-    # Process chunks in batches of 64
-    for start in range(0, len(chunks), BATCH_SIZE):
-        batch = chunks[start:start + BATCH_SIZE]
+    # Process chunks in batches
+    for start in range(
+        0,
+        len(chunks),
+        BATCH_SIZE
+    ):
 
-        texts = [chunk["text"] for chunk in batch]
-        ids = [chunk["id"] for chunk in batch]
+        batch = chunks[
+            start:start + BATCH_SIZE
+        ]
+
+        texts = [
+            chunk["text"]
+            for chunk in batch
+        ]
+
+        ids = [
+            chunk["id"]
+            for chunk in batch
+        ]
 
         metadatas = [
             {
                 "company": chunk["company"],
+                "fiscal_year": chunk["fiscal_year"],
+                "source_document": chunk["source_document"],
                 "page": chunk["page"],
             }
             for chunk in batch
         ]
 
         print(
-            f"Embedding chunks {start + 1}"
-            f"-{min(start + BATCH_SIZE, len(chunks))}"
+            f"Embedding chunks "
+            f"{start + 1}-"
+            f"{min(start + BATCH_SIZE, len(chunks))}"
             f" of {len(chunks)}"
         )
 
@@ -83,7 +104,10 @@ def build_index():
 
     print("\nIndexing complete!")
     print(f"Collection: {COLLECTION_NAME}")
-    print(f"Total documents: {collection.count()}")
+    print(
+        f"Total documents: "
+        f"{collection.count()}"
+    )
 
 
 # --------------------------------------------------
@@ -92,12 +116,13 @@ def build_index():
 
 def search(query, k=5):
     """
-    Search the Chroma collection and return
-    the top k chunks with their pages and scores.
+    Search the v2 Chroma collection and return
+    the top k chunks with fiscal-year metadata.
     """
 
-
-    client = chromadb.PersistentClient(path=CHROMA_DIR)
+    client = chromadb.PersistentClient(
+        path=CHROMA_DIR
+    )
 
     collection = client.get_collection(
         name=COLLECTION_NAME
@@ -110,18 +135,48 @@ def search(query, k=5):
     results = collection.query(
         query_embeddings=query_embedding,
         n_results=k,
-        include=["documents", "metadatas", "distances"],
+        include=[
+            "documents",
+            "metadatas",
+            "distances"
+        ],
     )
 
     output = []
 
-    for i in range(len(results["documents"][0])):
+    for i in range(
+        len(results["documents"][0])
+    ):
+
+        metadata = results[
+            "metadatas"
+        ][0][i]
+
         output.append(
             {
-                "text": results["documents"][0][i],
-                "company": results["metadatas"][0][i]["company"],
-                "page": results["metadatas"][0][i]["page"],
-                "score": results["distances"][0][i],
+                "text": results[
+                    "documents"
+                ][0][i],
+
+                "company": metadata[
+                    "company"
+                ],
+
+                "fiscal_year": metadata[
+                    "fiscal_year"
+                ],
+
+                "source_document": metadata[
+                    "source_document"
+                ],
+
+                "page": metadata[
+                    "page"
+                ],
+
+                "score": results[
+                    "distances"
+                ][0][i],
             }
         )
 
@@ -133,6 +188,7 @@ def search(query, k=5):
 # --------------------------------------------------
 
 def run_tests():
+
     queries = [
         "total revenue FY24",
         "employee headcount",
@@ -142,18 +198,62 @@ def run_tests():
     ]
 
     for query in queries:
-        print("\n" + "=" * 70)
-        print(f"QUERY: {query}")
-        print("=" * 70)
 
-        results = search(query, k=3)
+        print(
+            "\n" + "=" * 70
+        )
 
-        for rank, result in enumerate(results, start=1):
-            print(f"\nResult #{rank}")
-            print(f"Company: {result['company']}")
-            print(f"Page: {result['page']}")
-            print(f"Distance: {result['score']}")
-            print(f"Text: {result['text'][:500]}")
+        print(
+            f"QUERY: {query}"
+        )
+
+        print(
+            "=" * 70
+        )
+
+        results = search(
+            query,
+            k=3
+        )
+
+        for rank, result in enumerate(
+            results,
+            start=1
+        ):
+
+            print(
+                f"\nResult #{rank}"
+            )
+
+            print(
+                f"Company: "
+                f"{result['company']}"
+            )
+
+            print(
+                f"Fiscal Year: "
+                f"{result['fiscal_year']}"
+            )
+
+            print(
+                f"Source: "
+                f"{result['source_document']}"
+            )
+
+            print(
+                f"Page: "
+                f"{result['page']}"
+            )
+
+            print(
+                f"Distance: "
+                f"{result['score']}"
+            )
+
+            print(
+                f"Text: "
+                f"{result['text'][:500]}"
+            )
 
 
 # --------------------------------------------------
@@ -161,5 +261,7 @@ def run_tests():
 # --------------------------------------------------
 
 if __name__ == "__main__":
+
     build_index()
+
     run_tests()
