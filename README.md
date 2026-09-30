@@ -1,126 +1,509 @@
 # TrustRAG
 
-## Corporate Intelligence & Benchmarking Platform
+### Corporate Intelligence & Benchmarking Platform
 
-TrustRAG is an evidence-grounded corporate research platform that converts annual-report PDFs into structured quantitative analysis, qualitative business intelligence and an interactive research copilot.
+**TrustRAG** is an evidence-grounded corporate research platform
+designed to help analysts compare companies, understand multi-year
+performance, surface qualitative business developments, and trace
+research outputs back to annual-report evidence.
 
-The platform is designed to reduce the manual effort involved in comparing companies across financial performance, workforce trends, strategic developments, management changes and sustainability disclosures.
+> **Core principle:** separate LLM-based extraction and synthesis from
+> deterministic financial calculations and source-level evidence so that
+> analytical outputs remain explainable and auditable.
 
----
+**Live Demo:** https://trustrag-9byyyxtfkjdyea8xue6mka.streamlit.app/\
+**GitHub:** https://github.com/aryan73M/TrustRAG
 
-## Product Overview
+------------------------------------------------------------------------
 
-TrustRAG follows a simple workflow:
+## Why TrustRAG?
 
-Upload Annual Reports
-→ Extract Document Evidence
-→ Retrieve Relevant Passages
-→ Extract Structured KPIs
-→ Calculate Derived Metrics
-→ Generate Qualitative Intelligence
-→ Ask Questions Through Research Copilot
+Corporate research often requires moving between annual reports,
+financial statements, management commentary, workforce disclosures,
+sustainability sections, and peer comparisons.
 
----
+TrustRAG brings these workflows into one interface:
 
-## Key Features
+-   **Quantitative Intelligence** --- KPI analysis, YoY changes, CAGR,
+    margins, workforce metrics, and peer benchmarking.
+-   **Qualitative Intelligence** --- strategic, management,
+    sustainability/ESG, and workforce developments.
+-   **Research Copilot** --- natural-language questions over the
+    TrustRAG evidence base.
+-   **Evidence Explorer** --- trace extracted metrics to reported
+    labels, source pages, evidence text, notes, and coverage.
+-   **Excel output** --- export the benchmarking analysis for further
+    analyst work.
 
-### 1. Quantitative Intelligence
+------------------------------------------------------------------------
 
-TrustRAG extracts and analyzes:
+## Product Walkthrough
 
-- Revenue
-- Revenue Growth
-- Operating / EBIT Margin
-- Profit After Tax
-- EPS
-- ROE
-- Free Cash Flow
-- Capital Expenditure
-- Operating Cash Flow
-- Cash / Liquid Assets
-- Employee Headcount
-- Employee Attrition
+### 1. Executive Overview
 
-Derived metrics include:
+The overview provides a consolidated view of FY2025 performance across
+the selected companies, including revenue, revenue growth, and operating
+margin.
 
-- PAT Margin
-- Standardized Free Cash Flow
-- FCF Margin
-- Revenue per Employee
-- Year-over-Year Change
-
----
+![TrustRAG Executive Overview](docs/screenshots/01-overview.png)
 
 ### 2. Qualitative Intelligence
 
-The platform identifies evidence-supported developments across:
+TrustRAG can synthesize changes across annual-report years, including
+strategic priorities, engagement models, new business areas, leadership
+changes, and sustainability commitments.
 
-- Strategy & Business
-- Management & Leadership
-- Sustainability & ESG
-- Workforce & Organization
-
-Each finding is linked to the relevant annual-report page.
-
----
+![TrustRAG Qualitative
+Intelligence](docs/screenshots/02-qualitative-intelligence.png)
 
 ### 3. Research Copilot
 
-Users can ask natural-language questions about uploaded reports.
+The Copilot accepts research questions in natural language and presents
+findings, evidence, and caveats in a consulting-style format.
 
-Examples:
+![TrustRAG Research Copilot](docs/screenshots/03-research-copilot.png)
 
-> Compare revenue growth across the uploaded companies.
+------------------------------------------------------------------------
 
-> What strategic changes were discussed in FY2025?
+## Key Capabilities
 
-> Compare workforce developments between FY2024 and FY2025.
+### Quantitative Intelligence
 
-> What sustainability initiatives were disclosed?
+The platform works with company-year KPI records and calculates derived
+metrics deterministically rather than asking an LLM to perform financial
+arithmetic.
 
-The copilot retrieves relevant evidence before generating the answer.
+Current KPI coverage includes:
 
----
+  -----------------------------------------------------------------------
+  Category                            Metrics
+  ----------------------------------- -----------------------------------
+  Financial performance               Revenue, revenue growth, PAT, EPS
 
-### 4. Evidence Explorer
+  Profitability                       Operating margin, PAT margin, ROE
 
-Each extracted KPI can be traced to:
+  Cash flow                           Free cash flow, operating cash
+                                      flow, capex, standardized FCF
 
-- Company
-- Fiscal Year
-- Source PDF
-- Source Page
-- Supporting Evidence
+  Liquidity                           Cash & liquid assets
 
-This makes the system more auditable than a conventional general-purpose chatbot.
+  Workforce                           Employees, employee growth,
+                                      attrition
 
----
+  Efficiency                          Revenue per employee
 
-## Architecture
+  Benchmarking                        YoY change, percentage change,
+                                      CAGR, peer comparison
+  -----------------------------------------------------------------------
 
-```text
-                  Annual Report PDFs
-                         │
-                         ▼
-                 PDF Text Extraction
-                         │
-                         ▼
-                    Chunking
-                         │
-                         ▼
-                Semantic Retrieval
-                         │
-                         ▼
-              Gemini Structured Output
-                    ┌────┴────┐
-                    │         │
-                    ▼         ▼
-             Quantitative   Qualitative
-               Analysis      Intelligence
-                    │         │
-                    └────┬────┘
-                         ▼
-                  TrustRAG Dashboard
-                         │
-                         ▼
-                 Research Copilot
+For example, FY2024 → FY2025 revenue growth is calculated from the
+underlying reported revenue values, rather than generated by the LLM.
+
+### Qualitative Intelligence
+
+The qualitative layer organizes annual-report evidence into:
+
+-   Strategic changes
+-   Management changes
+-   Sustainability / ESG developments
+-   Workforce developments
+
+Each finding is designed to retain:
+
+-   Company
+-   Fiscal year
+-   Finding
+-   Source page
+-   Supporting evidence
+
+### Research Copilot
+
+The Copilot is designed around an evidence-first workflow:
+
+``` text
+User question
+      ↓
+Company / fiscal-year selection
+      ↓
+Evidence retrieval
+      ↓
+TrustRAG context assembly
+      ↓
+Gemini synthesis
+      ↓
+Key Findings
+      ↓
+Evidence
+      ↓
+Caveats
+```
+
+The generation instructions explicitly require the model to:
+
+-   use only supplied TrustRAG context,
+-   avoid invented numbers,
+-   distinguish reported from derived metrics,
+-   cite report evidence by company, fiscal year, and page,
+-   disclose insufficient evidence,
+-   mention relevant comparability caveats.
+
+------------------------------------------------------------------------
+
+## System Architecture
+
+``` text
+                     ┌──────────────────────┐
+                     │    Annual Reports    │
+                     └──────────┬───────────┘
+                                │
+                                ▼
+                     ┌──────────────────────┐
+                     │ PDF Ingestion &      │
+                     │ Year-aware Chunking  │
+                     └──────────┬───────────┘
+                                │
+                                ▼
+                     ┌──────────────────────┐
+                     │ Evidence Corpus      │
+                     │ 4,116 report chunks  │
+                     └──────────┬───────────┘
+                                │
+              ┌─────────────────┴─────────────────┐
+              ▼                                   ▼
+    ┌──────────────────┐                ┌──────────────────┐
+    │ Semantic Retrieval│                │ Gemini Structured │
+    │ + Metadata Filter │                │ KPI Extraction   │
+    └────────┬─────────┘                └────────┬─────────┘
+             │                                   │
+             │                                   ▼
+             │                         ┌──────────────────┐
+             │                         │ KPI Validation   │
+             │                         └────────┬─────────┘
+             │                                  │
+             │                                  ▼
+             │                         ┌──────────────────┐
+             │                         │ Deterministic    │
+             │                         │ Financial Metrics│
+             │                         └────────┬─────────┘
+             │                                  │
+             └────────────────┬─────────────────┘
+                              ▼
+                   ┌─────────────────────────┐
+                   │ Streamlit Intelligence  │
+                   │ Platform                │
+                   └───────────┬─────────────┘
+                               │
+          ┌────────────────────┼────────────────────┐
+          ▼                    ▼                    ▼
+   Quantitative         Qualitative          Research Copilot
+   Intelligence         Intelligence          + Evidence
+          │                    │                    │
+          └────────────────────┼────────────────────┘
+                               ▼
+                    Excel / Analyst Output
+```
+
+------------------------------------------------------------------------
+
+## Design Principles
+
+### 1. LLM ≠ Calculator
+
+Financial calculations are performed deterministically.
+
+For example:
+
+``` text
+YoY revenue change = Current FY revenue − Previous FY revenue
+
+YoY revenue % = 
+(Current FY revenue / Previous FY revenue − 1) × 100
+```
+
+The LLM is used for document interpretation and synthesis, not as the
+source of truth for arithmetic.
+
+### 2. Evidence before generation
+
+The Copilot is designed to retrieve relevant evidence before generating
+an answer.
+
+### 3. Year-aware retrieval
+
+The corpus stores fiscal-year metadata so that FY2024 and FY2025
+evidence can be separated during analysis.
+
+### 4. Auditability
+
+A KPI record can retain:
+
+``` text
+status
+value
+unit
+reported_label
+fiscal_year
+source_page
+evidence
+notes
+```
+
+This makes it possible to inspect where an extracted value came from and
+whether a comparability caveat exists.
+
+### 5. Abstention over invention
+
+When supporting evidence is unavailable or insufficient, the intended
+behavior is to say so rather than manufacture an answer.
+
+------------------------------------------------------------------------
+
+## Current Dataset
+
+The current benchmarking dataset covers:
+
+-   **TCS**
+-   **Infosys**
+-   **HCLTech**
+
+Fiscal years:
+
+-   FY2024
+-   FY2025
+
+The RAG evidence corpus contains **4,116 unique report chunks** across
+the current company-year corpus.
+
+------------------------------------------------------------------------
+
+## Tech Stack
+
+  Layer             Technology
+  ----------------- --------------------------------------------------
+  Application       Streamlit
+  Language          Python
+  LLM               Google Gemini
+  RAG               ChromaDB
+  Embeddings        Sentence Transformers --- BAAI/bge-small-en-v1.5
+  Data processing   Pandas
+  Validation        Pydantic
+  Excel             OpenPyXL
+  Visualization     Streamlit / charting components
+  Deployment        Streamlit Community Cloud
+  Version control   Git + GitHub
+
+------------------------------------------------------------------------
+
+## Project Structure
+
+``` text
+TrustRAG/
+│
+├── src/
+│   ├── dashboard_final.py
+│   ├── ingest.py
+│   ├── rag.py
+│   ├── extract_kpis.py
+│   ├── validate_kpis.py
+│   ├── calculate_metrics.py
+│   ├── quantitative_engine.py
+│   ├── qualitative_analysis.py
+│   ├── metrics.py
+│   └── ...
+│
+├── data/
+│   ├── calculated_kpis.json
+│   ├── calculated_kpis_FY2025.json
+│   ├── quantitative_analysis.json
+│   ├── qualitative_analysis.json
+│   ├── TrustRAG_Benchmarking_Report.xlsx
+│   └── chunks_v2.json
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+------------------------------------------------------------------------
+
+## Running Locally
+
+### 1. Clone the repository
+
+``` bash
+git clone https://github.com/aryan73M/TrustRAG.git
+cd TrustRAG
+```
+
+### 2. Create a virtual environment
+
+Windows:
+
+``` powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+macOS / Linux:
+
+``` bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+### 3. Install dependencies
+
+``` bash
+pip install -r requirements.txt
+```
+
+### 4. Configure the Gemini API key
+
+Create a `.env` file:
+
+``` env
+GOOGLE_API_KEY=YOUR_GOOGLE_API_KEY
+```
+
+**Never commit `.env` or expose your API key in source control.**
+
+### 5. Start the dashboard
+
+``` bash
+streamlit run src/dashboard_final.py
+```
+
+------------------------------------------------------------------------
+
+## Deployment
+
+TrustRAG is designed to run on Streamlit Community Cloud.
+
+Deployment configuration:
+
+``` text
+Repository: aryan73M/TrustRAG
+Branch: main
+Main file: src/dashboard_final.py
+```
+
+For cloud deployment, configure the Gemini API key through Streamlit
+Secrets rather than committing a `.env` file.
+
+``` toml
+GOOGLE_API_KEY = "YOUR_API_KEY"
+```
+
+------------------------------------------------------------------------
+
+## Evidence & Auditability
+
+The project deliberately keeps structured evidence alongside extracted
+KPIs.
+
+Example conceptual record:
+
+``` json
+{
+  "status": "reported",
+  "value": 255324,
+  "unit": "INR crore",
+  "reported_label": "Revenue from Operations",
+  "fiscal_year": "FY2025",
+  "source_page": 70,
+  "evidence": "On a consolidated basis, the revenue from operations...",
+  "notes": null
+}
+```
+
+This allows an analyst to move from:
+
+**dashboard metric → extracted KPI → annual-report page → evidence
+text**
+
+rather than treating the generated answer as an unexplained black box.
+
+------------------------------------------------------------------------
+
+## Example Research Questions
+
+The Copilot is designed for questions such as:
+
+``` text
+What was TCS revenue in FY2025 and how did it change from FY2024?
+
+Compare revenue growth of TCS and Infosys.
+
+What were the major strategic changes at TCS between FY2024 and FY2025?
+
+How did employee headcount change across the three companies?
+
+What evidence supports the change in operating margin?
+```
+
+------------------------------------------------------------------------
+
+## What Makes the Project Different?
+
+TrustRAG is intentionally not positioned as just another chatbot.
+
+The workflow separates four responsibilities:
+
+``` text
+Extraction
+   ↓
+Validation
+   ↓
+Deterministic Analysis
+   ↓
+Evidence-grounded Generation
+```
+
+That separation is important for financial and corporate research
+because a polished LLM response is not sufficient if the underlying
+number cannot be traced, validated, or compared consistently.
+
+------------------------------------------------------------------------
+
+## Limitations
+
+This is an analytical research prototype, not an investment-advisory or
+financial-decision system.
+
+Current limitations include:
+
+-   Coverage is limited to the companies and annual-report years
+    included in the dataset.
+-   Annual-report terminology and definitions can differ across
+    companies.
+-   Some metrics may be unavailable or not directly comparable.
+-   Qualitative findings depend on the quality and coverage of retrieved
+    report evidence.
+-   LLM-generated synthesis still requires analyst review for
+    high-stakes use.
+-   The deployed application should be treated as a research prototype
+    rather than a substitute for primary-source review.
+
+------------------------------------------------------------------------
+
+## Future Extensions
+
+Potential extensions include:
+
+-   More companies and fiscal years
+-   Automated annual-report ingestion
+-   Additional financial ratios
+-   Segment-level benchmarking
+-   Management commentary trend analysis
+-   Hosted vector database infrastructure
+-   More granular evidence scoring
+-   Analyst workspaces and saved research sessions
+-   Automated report refresh pipelines
+
+
+## Author
+
+**Aryan Soni**\
+MBA --- Department of Management Studies, IIT Roorkee
+
+Built as an applied analytics / corporate research portfolio project.
