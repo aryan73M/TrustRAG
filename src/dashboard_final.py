@@ -257,6 +257,86 @@ st.markdown(
            COMPANY CARDS
         ================================================== */
 
+        /* ==================================================
+           EXECUTIVE SNAPSHOT
+           ================================================== */
+
+        .snapshot-intro {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 0.9rem;
+        }
+
+        .snapshot-badge {
+            background: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+            border-radius: 999px;
+            padding: 0.38rem 0.7rem;
+            font-size: 0.72rem;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .kpi-card {
+            position: relative;
+            overflow: hidden;
+            border-top: 4px solid #2563eb;
+            padding: 1rem 1.05rem 0.9rem;
+        }
+
+        .kpi-card.revenue { border-top-color: #2563eb; }
+        .kpi-card.revenue_growth { border-top-color: #0891b2; }
+        .kpi-card.operating_margin { border-top-color: #7c3aed; }
+        .kpi-card.pat { border-top-color: #059669; }
+        .kpi-card.employees { border-top-color: #d97706; }
+        .kpi-card.attrition { border-top-color: #e11d48; }
+
+        .kpi-card.revenue .kpi-label,
+        .kpi-card.revenue .snapshot-value { color: #1d4ed8; }
+        .kpi-card.revenue_growth .kpi-label,
+        .kpi-card.revenue_growth .snapshot-value { color: #0e7490; }
+        .kpi-card.operating_margin .kpi-label,
+        .kpi-card.operating_margin .snapshot-value { color: #6d28d9; }
+        .kpi-card.pat .kpi-label,
+        .kpi-card.pat .snapshot-value { color: #047857; }
+        .kpi-card.employees .kpi-label,
+        .kpi-card.employees .snapshot-value { color: #b45309; }
+        .kpi-card.attrition .kpi-label,
+        .kpi-card.attrition .snapshot-value { color: #be123c; }
+
+        .snapshot-row {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 0.8rem;
+            padding: 0.42rem 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .snapshot-row:last-child {
+            border-bottom: none;
+            padding-bottom: 0.05rem;
+        }
+
+        .snapshot-company {
+            color: #475569;
+            font-size: 0.76rem;
+            font-weight: 700;
+        }
+
+        .snapshot-value {
+            font-size: 1.05rem;
+            font-weight: 850;
+            white-space: nowrap;
+        }
+
+        /* ==================================================
+           COMPANY CARDS
+           ================================================== */
+
         .company-card {
             background: white;
 
@@ -435,6 +515,89 @@ st.markdown(
         [data-testid="stDataFrame"] {
             border-radius: 12px;
             overflow: hidden;
+        }
+
+        /* ==================================================
+           PRIMARY PLATFORM NAVIGATION
+        ================================================== */
+
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5)) > div[data-baseweb="tab-list"] {
+            display: flex;
+            gap: 0.55rem;
+            padding: 0.55rem;
+            margin: 0.35rem 0 1.15rem 0;
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            box-shadow: 0 5px 18px rgba(15, 23, 42, 0.06);
+            overflow-x: auto;
+            scrollbar-width: thin;
+        }
+
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5)) > div[data-baseweb="tab-list"] button[data-baseweb="tab"] {
+            flex: 1 1 0;
+            min-height: 76px;
+            padding: 0.9rem 1rem;
+            border-radius: 13px;
+            border: 1px solid transparent;
+            font-size: 1.06rem;
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            white-space: nowrap;
+            line-height: 1.15;
+            transition: all 0.18s ease;
+        }
+
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5)) > div[data-baseweb="tab-list"] button[data-baseweb="tab"] p {
+            font-size: 1.06rem;
+            font-weight: 800;
+            margin: 0;
+        }
+
+        /* Individual module colours */
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5)) > div[data-baseweb="tab-list"] button[data-baseweb="tab"]:nth-child(1) {
+            color: #475569;
+        }
+
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5)) > div[data-baseweb="tab-list"] button[data-baseweb="tab"]:nth-child(2) {
+            color: #2563eb;
+        }
+
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5)) > div[data-baseweb="tab-list"] button[data-baseweb="tab"]:nth-child(3) {
+            color: #7c3aed;
+        }
+
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5)) > div[data-baseweb="tab-list"] button[data-baseweb="tab"]:nth-child(4) {
+            color: #0f766e;
+        }
+
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5)) > div[data-baseweb="tab-list"] button[data-baseweb="tab"]:nth-child(5) {
+            color: #b45309;
+        }
+
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5)) > div[data-baseweb="tab-list"] button[data-baseweb="tab"]:hover {
+            background: white;
+            border-color: #cbd5e1;
+            transform: translateY(-1px);
+        }
+
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5)) > div[data-baseweb="tab-list"] button[data-baseweb="tab"][aria-selected="true"] {
+            background: #0f172a;
+            color: white !important;
+            border-color: #0f172a;
+            box-shadow: 0 5px 14px rgba(15, 23, 42, 0.18);
+        }
+
+        /* Hide Streamlit's default coloured underline for the main nav. */
+        div[data-testid="stTabs"] > div[data-baseweb="tab-highlight"] {
+            display: none;
+        }
+
+        @media (max-width: 900px) {
+            div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5)) > div[data-baseweb="tab-list"] button[data-baseweb="tab"] {
+                min-width: 145px;
+                flex: 0 0 auto;
+            }
         }
 
         </style>
@@ -795,6 +958,77 @@ def cross_data(
     )
 
 
+def metric_description(metric):
+    descriptions = {
+        "revenue": "Scale of operations measured through reported revenue.",
+        "revenue_growth": "Year-on-year change in reported revenue.",
+        "operating_margin": "Operating profitability as reported in the annual report.",
+        "pat": "Profit after tax attributable to the reporting period.",
+        "pat_margin": "PAT expressed as a percentage of revenue.",
+        "eps": "Reported earnings per share.",
+        "roe": "Return on equity / return on net worth as reported.",
+        "free_cash_flow": "Company-reported free cash flow; definition may vary.",
+        "standardized_fcf": "Operating cash flow less absolute capital expenditure.",
+        "capex": "Capital expenditure reported for the period.",
+        "operating_cash_flow": "Cash generated from operating activities.",
+        "cash_liquid_assets": "Reported cash and liquid investments.",
+        "employees": "Reported employee headcount.",
+        "attrition": "Reported employee attrition rate.",
+        "revenue_per_employee": "Revenue divided by employee headcount.",
+        "employee_growth": "Year-on-year change in employee headcount.",
+        "fcf_margin": "Free cash flow as a percentage of revenue.",
+    }
+    return descriptions.get(metric, "")
+
+
+def display_delta(metric, data):
+    if not data:
+        return "N/A"
+
+    if metric in RATE_METRICS:
+        change = data.get("absolute_change")
+        return (
+            f"{change:+.1f} pp"
+            if isinstance(change, (int, float))
+            else "N/A"
+        )
+
+    change = data.get("percentage_change")
+    return (
+        f"{change:+.2f}%"
+        if isinstance(change, (int, float))
+        else "N/A"
+    )
+
+
+def display_change_value(metric, data):
+    if not data:
+        return "N/A"
+
+    change = data.get("absolute_change")
+
+    if not isinstance(change, (int, float)):
+        return "N/A"
+
+    if metric in RATE_METRICS:
+        return f"{change:+.1f} pp"
+
+    if metric == "eps":
+        return f"₹{change:+,.2f}"
+
+    if metric == "employees":
+        return f"{change:+,.0f}"
+
+    return f"{change:+,.0f}"
+
+
+def metric_value_or_none(company, year, metric):
+    return numeric_value(
+        record(company, year),
+        metric,
+    )
+
+
 # ============================================================
 # AVAILABLE COMPANIES
 # ============================================================
@@ -1004,133 +1238,16 @@ with st.sidebar:
 
 
 # ============================================================
-# EXECUTIVE SNAPSHOT
-# ============================================================
-
-st.markdown(
-    '<div class="section-title">Executive Snapshot</div>',
-    unsafe_allow_html=True,
-)
-
-st.markdown(
-    '<div class="section-subtitle">'
-    'Current-year view of the selected companies'
-    '</div>',
-    unsafe_allow_html=True,
-)
-
-
-snapshot_metrics = [
-    (
-        "revenue",
-        "Revenue",
-    ),
-    (
-        "revenue_growth",
-        "Revenue Growth",
-    ),
-    (
-        "operating_margin",
-        "Operating Margin",
-    ),
-    (
-        "pat",
-        "Profit After Tax",
-    ),
-    (
-        "employees",
-        "Employees",
-    ),
-    (
-        "attrition",
-        "Attrition",
-    ),
-]
-
-
-for start in range(
-    0,
-    len(snapshot_metrics),
-    3,
-):
-
-    cols = st.columns(
-        3,
-        gap="medium",
-    )
-
-    for col, (
-        metric,
-        label,
-    ) in zip(
-        cols,
-        snapshot_metrics[
-            start:start + 3
-        ],
-    ):
-
-        with col:
-
-            company_lines = []
-
-            for company in selected_companies:
-
-                data = record(
-                    company,
-                    selected_year,
-                )
-
-                company_lines.append(
-                    (
-                        company,
-                        fmt(
-                            numeric_value(
-                                data,
-                                metric,
-                            ),
-                            metric,
-                        ),
-                    )
-                )
-
-            html = (
-                '<div class="kpi-card">'
-                f'<div class="kpi-label">{label}</div>'
-            )
-
-            for company, value_text in company_lines:
-
-                html += (
-                    f'<div class="kpi-value">'
-                    f'{value_text}'
-                    f'</div>'
-                    f'<div class="kpi-company">'
-                    f'{company} · {selected_year}'
-                    f'</div>'
-                )
-
-            html += "</div>"
-
-            st.markdown(
-                html,
-                unsafe_allow_html=True,
-            )
-
-
-st.divider()
-
-
-# ============================================================
-# MAIN TABS
+# MAIN PLATFORM NAVIGATION
 # ============================================================
 
 overview_tab, quantitative_tab, qualitative_tab, copilot_tab, evidence_tab = st.tabs(
     [
         "🏠 Overview",
-        "📈 Quantitative",
-        "🔎 Qualitative",
+        "📈 Quantitative Intelligence",
+        "🔎 Qualitative Intelligence",
         "🤖 Research Copilot",
-        "📚 Evidence",
+        "📚 Evidence Explorer",
     ]
 )
 
@@ -1142,26 +1259,64 @@ overview_tab, quantitative_tab, qualitative_tab, copilot_tab, evidence_tab = st.
 with overview_tab:
 
     st.markdown(
-        '<div class="section-title">'
-        'Corporate Intelligence Overview'
-        '</div>',
+        '<div class="section-title">Corporate Intelligence Overview</div>',
         unsafe_allow_html=True,
     )
 
     st.markdown(
-        '<div class="section-subtitle">'
-        'A consolidated view of financial performance, '
-        'workforce indicators and peer benchmarking.'
+        '<div class="section-subtitle">A consolidated executive view of financial performance, workforce indicators and peer benchmarking.</div>',
+        unsafe_allow_html=True,
+    )
+
+    st.markdown(
+        '<div class="snapshot-intro">'
+        '<div class="section-title" style="font-size:1.05rem;margin-top:0">Executive Snapshot</div>'
+        f'<div class="snapshot-badge">{selected_year} · {len(selected_companies)} companies</div>'
         '</div>',
         unsafe_allow_html=True,
     )
+
+    snapshot_metrics = [
+        ("revenue", "Revenue"),
+        ("revenue_growth", "Revenue Growth"),
+        ("operating_margin", "Operating Margin"),
+        ("pat", "Profit After Tax"),
+        ("employees", "Employees"),
+        ("attrition", "Attrition"),
+    ]
+
+    for start_idx in range(0, len(snapshot_metrics), 3):
+        cols = st.columns(3, gap="medium")
+        for col, (metric, label) in zip(cols, snapshot_metrics[start_idx:start_idx + 3]):
+            with col:
+                company_lines = []
+                for company in selected_companies:
+                    data = record(company, selected_year)
+                    company_lines.append(
+                        (company, fmt(numeric_value(data, metric), metric))
+                    )
+
+                rows_html = "".join(
+                    f'<div class="snapshot-row"><span class="snapshot-company">{company}</span><span class="snapshot-value">{value_text}</span></div>'
+                    for company, value_text in company_lines
+                )
+
+                st.markdown(
+                    f'<div class="kpi-card {metric}">'
+                    f'<div class="kpi-label">{label}</div>'
+                    f'{rows_html}'
+                    f'</div>',
+                    unsafe_allow_html=True,
+                )
+
+    st.divider()
 
     # --------------------------------------------------------
     # MODULE CARDS
     # --------------------------------------------------------
 
-    c1, c2, c3 = st.columns(
-        3,
+    c1, c2, c3, c4 = st.columns(
+        4,
         gap="medium",
     )
 
@@ -1213,9 +1368,24 @@ with overview_tab:
                     Research Copilot
                 </div>
                 <div class="module-text">
-                    Ask natural-language questions
-                    and retrieve supporting annual-report
-                    evidence before generating an answer.
+                    Ask natural-language questions and retrieve supporting annual-report evidence before generating an answer.
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+    with c4:
+
+        st.markdown(
+            """
+            <div class="module-card">
+                <div class="module-icon">📚</div>
+                <div class="module-title">
+                    Evidence Explorer
+                </div>
+                <div class="module-text">
+                    Audit extracted KPIs, source pages, reported labels and supporting evidence.
                 </div>
             </div>
             """,
@@ -1391,16 +1561,14 @@ with overview_tab:
 with quantitative_tab:
 
     st.markdown(
-        '<div class="section-title">'
-        'Quantitative Intelligence'
-        '</div>',
+        '<div class="section-title">Quantitative Intelligence</div>',
         unsafe_allow_html=True,
     )
 
     st.markdown(
         '<div class="section-subtitle">'
-        'Financial performance, operational efficiency, '
-        'cash flow and workforce benchmarking.'
+        'Benchmark financial performance, operating efficiency, cash flow '
+        'and workforce indicators across FY2024–FY2025.'
         '</div>',
         unsafe_allow_html=True,
     )
@@ -1408,72 +1576,170 @@ with quantitative_tab:
     quantitative_metric = st.selectbox(
         "Select KPI",
         list(METRICS),
-        format_func=lambda x:
-            METRICS[x],
+        format_func=lambda x: METRICS[x],
         key="quantitative_metric",
     )
 
+    st.caption(metric_description(quantitative_metric))
+
+    # --------------------------------------------------------
+    # KPI SUMMARY CARDS
+    # --------------------------------------------------------
+
+    summary_cols = st.columns(
+        min(4, len(selected_companies)),
+        gap="medium",
+    )
+
+    for col, company in zip(
+        summary_cols,
+        selected_companies,
+    ):
+        current = metric_value_or_none(
+            company,
+            selected_year,
+            quantitative_metric,
+        )
+        previous = metric_value_or_none(
+            company,
+            "FY2024",
+            quantitative_metric,
+        )
+
+        delta = None
+
+        if (
+            isinstance(current, (int, float))
+            and isinstance(previous, (int, float))
+        ):
+            if quantitative_metric in RATE_METRICS:
+                delta = (
+                    f"{current - previous:+.1f} pp"
+                )
+            elif previous != 0:
+                delta = (
+                    f"{(current - previous) / abs(previous) * 100:+.2f}%"
+                )
+
+        with col:
+            st.metric(
+                company,
+                fmt(current, quantitative_metric),
+                delta=delta,
+            )
+
+    st.write("")
+
+    # --------------------------------------------------------
+    # PERFORMANCE VISUALS
+    # --------------------------------------------------------
+
+    st.markdown("### Performance Visuals")
+    st.caption(
+        "Use the selected KPI for focused benchmarking, then scan scale, profitability and workforce trends below."
+    )
+
     metric_rows = []
-
     for company in selected_companies:
-
         for year in YEARS:
-
             metric_rows.append(
                 {
-                    "Company":
-                        company,
-
-                    "Fiscal Year":
-                        year,
-
-                    METRICS[
-                        quantitative_metric
-                    ]:
-                        numeric_value(
-                            record(
-                                company,
-                                year,
-                            ),
-                            quantitative_metric,
-                        ),
+                    "Company": company,
+                    "Fiscal Year": year,
+                    METRICS[quantitative_metric]: metric_value_or_none(company, year, quantitative_metric),
                 }
             )
 
-    metric_df = pd.DataFrame(
-        metric_rows
-    )
+    metric_df = pd.DataFrame(metric_rows)
 
-    st.dataframe(
-        metric_df,
-        width="stretch",
-        hide_index=True,
-    )
+    # 1. Selected KPI trend + 2. current-year peer view
+    left, right = st.columns(2, gap="large")
 
-    metric_column = METRICS[
-        quantitative_metric
-    ]
-
-    metric_pivot = (
-        metric_df
-        .pivot_table(
+    with left:
+        st.markdown(f"#### 1. {METRICS[quantitative_metric]} Trend")
+        metric_pivot = metric_df.pivot_table(
             index="Fiscal Year",
             columns="Company",
-            values=metric_column,
+            values=METRICS[quantitative_metric],
             aggfunc="first",
         )
-    )
+        if not metric_pivot.empty and metric_pivot.notna().any().any():
+            st.line_chart(metric_pivot, width="stretch", height=320)
+        else:
+            st.info("No trend data is available for this KPI.")
 
-    if metric_pivot.notna().any().any():
+    with right:
+        st.markdown(f"#### 2. {METRICS[quantitative_metric]} Peer View")
+        peer_data = cross_data(selected_year, quantitative_metric)
+        peer_df = pd.DataFrame(
+            [
+                {
+                    "Company": company,
+                    METRICS[quantitative_metric]: peer_data.get(company),
+                }
+                for company in selected_companies
+            ]
+        )
+        if not peer_df.empty and peer_df[METRICS[quantitative_metric]].notna().any():
+            st.bar_chart(
+                peer_df.set_index("Company"),
+                width="stretch",
+                height=320,
+            )
+        else:
+            st.info("Peer benchmark data is not available.")
 
-        st.line_chart(
-            metric_pivot
+    def build_metric_pivot(metric):
+        rows = []
+        for company in selected_companies:
+            for year in YEARS:
+                rows.append(
+                    {
+                        "Company": company,
+                        "Fiscal Year": year,
+                        METRICS[metric]: metric_value_or_none(company, year, metric),
+                    }
+                )
+        frame = pd.DataFrame(rows)
+        return frame.pivot_table(
+            index="Fiscal Year",
+            columns="Company",
+            values=METRICS[metric],
+            aggfunc="first",
         )
 
+    # 3. Revenue trend + 4. operating margin trend
+    left, right = st.columns(2, gap="large")
 
-    st.markdown(
-        "### Year-over-Year Analysis"
-    )
+    with left:
+        st.markdown("#### 3. Revenue Trend")
+        revenue_pivot = build_metric_pivot("revenue")
+        if not revenue_pivot.empty and revenue_pivot.notna().any().any():
+            st.line_chart(revenue_pivot, width="stretch", height=300)
+        else:
+            st.info("Revenue trend is not available.")
+
+    with right:
+        st.markdown("#### 4. Operating Margin Trend")
+        margin_pivot = build_metric_pivot("operating_margin")
+        if not margin_pivot.empty and margin_pivot.notna().any().any():
+            st.line_chart(margin_pivot, width="stretch", height=300)
+        else:
+            st.info("Operating margin trend is not available.")
+
+    # 5. workforce trend
+    st.markdown("#### 5. Workforce Trend")
+    employee_pivot = build_metric_pivot("employees")
+    if not employee_pivot.empty and employee_pivot.notna().any().any():
+        st.line_chart(employee_pivot, width="stretch", height=300)
+    else:
+        st.info("Workforce trend is not available.")
+
+    # --------------------------------------------------------
+    # YEAR-OVER-YEAR ANALYSIS
+    # --------------------------------------------------------
+
+    st.markdown("### Year-over-Year Analysis")
 
     yoy_rows = []
 
@@ -1484,58 +1750,39 @@ with quantitative_tab:
             quantitative_metric,
         )
 
-        row = {
-            "Company":
-                company,
-
-            "Previous":
-                data.get(
-                    "previous_value"
-                ),
-
-            "Current":
-                data.get(
-                    "current_value"
-                ),
-
-            "Absolute Change":
-                data.get(
-                    "absolute_change"
-                ),
-        }
-
-        if quantitative_metric in RATE_METRICS:
-
-            row[
-                "Change (percentage points)"
-            ] = data.get(
-                "absolute_change"
-            )
-
-        else:
-
-            row[
-                "Change (%)"
-            ] = data.get(
-                "percentage_change"
-            )
-
         yoy_rows.append(
-            row
+            {
+                "Company": company,
+                "FY2024": data.get("previous_value"),
+                "FY2025": data.get("current_value"),
+                "Absolute Change":
+                    data.get("absolute_change"),
+                (
+                    "Change (pp)"
+                    if quantitative_metric in RATE_METRICS
+                    else "Change (%)"
+                ):
+                    (
+                        data.get("absolute_change")
+                        if quantitative_metric in RATE_METRICS
+                        else data.get("percentage_change")
+                    ),
+            }
         )
 
+    yoy_df = pd.DataFrame(yoy_rows)
+
     st.dataframe(
-        pd.DataFrame(
-            yoy_rows
-        ),
+        yoy_df,
         width="stretch",
         hide_index=True,
     )
 
+    # --------------------------------------------------------
+    # LONG-TERM / CAGR
+    # --------------------------------------------------------
 
-    st.markdown(
-        "### Long-Term Change / CAGR"
-    )
+    st.markdown("### Long-Term Change / CAGR")
 
     cagr_rows = []
 
@@ -1546,99 +1793,57 @@ with quantitative_tab:
             quantitative_metric,
         )
 
-        cagr_rows.append(
-            {
-                "Company":
-                    company,
+        start_value = data.get("start_value")
+        end_value = data.get("end_value")
+        cagr_percent = data.get("cagr_percent")
+        change_pp = data.get("change_percentage_points")
 
-                "Start":
-                    data.get(
-                        "start_value"
-                    ),
+        row = {
+            "Company": company,
+            "Start": fmt(start_value, quantitative_metric),
+            "End": fmt(end_value, quantitative_metric),
+        }
 
-                "End":
-                    data.get(
-                        "end_value"
-                    ),
-
-                "CAGR (%)":
-                    data.get(
-                        "cagr_percent"
-                    ),
-
-                "Change (pp)":
-                    data.get(
-                        "change_percentage_points"
-                    ),
-            }
-        )
-
-    st.dataframe(
-        pd.DataFrame(
-            cagr_rows
-        ),
-        width="stretch",
-        hide_index=True,
-    )
-
-
-    st.markdown(
-        f"### {selected_year} Peer Benchmark"
-    )
-
-    peer_rows = []
-
-    peer_data = cross_data(
-        selected_year,
-        quantitative_metric,
-    )
-
-    for company in selected_companies:
-
-        peer_rows.append(
-            {
-                "Company":
-                    company,
-
-                METRICS[
-                    quantitative_metric
-                ]:
-                    peer_data.get(
-                        company
-                    ),
-            }
-        )
-
-    peer_df = pd.DataFrame(
-        peer_rows
-    )
-
-    st.dataframe(
-        peer_df,
-        width="stretch",
-        hide_index=True,
-    )
-
-    if (
-        not peer_df.empty
-        and peer_df[
-            METRICS[
-                quantitative_metric
-            ]
-        ].notna().any()
-    ):
-
-        st.bar_chart(
-            peer_df.set_index(
-                "Company"
+        if quantitative_metric in RATE_METRICS:
+            row["Change (pp)"] = (
+                f"{change_pp:+.2f} pp"
+                if isinstance(change_pp, (int, float))
+                else "N/A"
             )
-        )
+        else:
+            row["CAGR (%)"] = (
+                f"{cagr_percent:+.2f}%"
+                if isinstance(cagr_percent, (int, float))
+                else "N/A"
+            )
 
+        cagr_rows.append(row)
+
+    st.dataframe(
+        pd.DataFrame(cagr_rows),
+        width="stretch",
+        hide_index=True,
+    )
+
+    # --------------------------------------------------------
+    # COMPANY-YEAR DETAIL
+    # --------------------------------------------------------
+
+    with st.expander(
+        "View underlying company-year values",
+        expanded=False,
+    ):
+        st.dataframe(
+            metric_df,
+            width="stretch",
+            hide_index=True,
+        )
 
     st.info(
-        "Comparisons should be interpreted with "
-        "company-specific definitions and source "
-        "comparability notes."
+        "Comparability note: operating margin, ROE, attrition, "
+        "cash/liquid assets and free cash flow may use different "
+        "company-specific definitions. Derived metrics are calculated "
+        "deterministically from the extracted KPI dataset."
     )
 
 
@@ -1704,6 +1909,34 @@ with qualitative_tab:
                 + ", ".join(
                     source_documents
                 )
+            )
+
+        total_findings = sum(
+            len(qualitative_record.get(category, []))
+            for category in QUAL_CATEGORIES
+        )
+
+        q1, q2, q3 = st.columns(3)
+
+        with q1:
+            st.metric(
+                "Supported Findings",
+                total_findings,
+            )
+
+        with q2:
+            st.metric(
+                "Evidence Chunks",
+                qualitative_record.get(
+                    "evidence_chunks_used",
+                    "N/A",
+                ),
+            )
+
+        with q3:
+            st.metric(
+                "Fiscal Year",
+                qualitative_year,
             )
 
         qualitative_tabs = st.tabs(
@@ -2077,15 +2310,19 @@ Only include sections that are useful.
                         ),
                     )
 
-                    st.markdown(
-                        "### Research Output"
+                    st.markdown("### Research Output")
+
+                    st.success(
+                        "Answer generated from the selected TrustRAG "
+                        "dataset and retrieved annual-report evidence."
                     )
 
                     if response and response.text:
 
-                        st.markdown(
-                            response.text
-                        )
+                        with st.container(border=True):
+                            st.markdown(
+                                response.text
+                            )
 
                     else:
 
@@ -2252,6 +2489,15 @@ with evidence_tab:
 
 
     st.divider()
+
+    st.markdown(
+        "### Audit Trail"
+    )
+
+    st.caption(
+        "Every KPI shown above is linked to an extracted value, "
+        "validation status and annual-report source page where available."
+    )
 
     st.markdown(
         "### Data Coverage"
