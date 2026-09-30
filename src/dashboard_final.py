@@ -534,6 +534,42 @@ st.markdown(
             scrollbar-width: thin;
         }
 
+        /* Improve form label visibility */
+        label,
+        [data-testid="stWidgetLabel"] p,
+        [data-testid="stWidgetLabel"] span {
+            color: #334155 !important;
+            opacity: 1 !important;
+        }
+
+        /* Fix visibility of main navigation tab text */
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5))
+        button {
+            color: #334155 !important;
+            opacity: 1 !important;
+        }
+
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5))
+        button p,
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5))
+        button span,
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5))
+        button div {
+            color: #334155 !important;
+            opacity: 1 !important;
+        }
+
+        /* Keep active tab text visible */
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5))
+        button[aria-selected="true"],
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5))
+        button[aria-selected="true"] p,
+        div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5))
+        button[aria-selected="true"] span {
+            color: #ef4444 !important;
+            opacity: 1 !important;
+        }
+
         div[data-testid="stTabs"]:has(> div[data-baseweb="tab-list"] button:nth-child(5)) > div[data-baseweb="tab-list"] button[data-baseweb="tab"] {
             flex: 1 1 0;
             min-height: 76px;
