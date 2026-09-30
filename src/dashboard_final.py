@@ -614,9 +614,6 @@ st.markdown(
 @st.cache_data
 def load_json(path):
 
-    if not path.exists():
-        return {}
-
     try:
 
         with open(
@@ -625,9 +622,21 @@ def load_json(path):
             encoding="utf-8",
         ) as file:
 
-            return json.load(file)
+            data = json.load(file)
 
-    except Exception:
+        print(
+            f"TRUSTRAG DEBUG: Loaded {path} | "
+            f"type={type(data).__name__}"
+        )
+
+        return data
+
+    except Exception as e:
+
+        print(
+            f"TRUSTRAG DEBUG: FAILED to load {path} | "
+            f"{type(e).__name__}: {e}"
+        )
 
         return {}
 
@@ -648,6 +657,9 @@ qual = load_json(
     QUAL_FILE
 )
 
+print(f"TRUSTRAG DEBUG: BASE DIR = {Path.cwd()}")
+print(f"TRUSTRAG DEBUG: DATA DIR = {DATA_DIR}")
+print(f"TRUSTRAG DEBUG: DATA EXISTS = {DATA_DIR.exists()}")
 
 # ============================================================
 # NORMALIZE RECORDS
