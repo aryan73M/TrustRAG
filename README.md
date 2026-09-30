@@ -45,7 +45,7 @@ The overview provides a consolidated view of FY2025 performance across
 the selected companies, including revenue, revenue growth, and operating
 margin.
 
-![TrustRAG Executive Overview](docs/screenshots/01-overview.png)
+![TrustRAG Executive Overview][View Overview](docs/screenshots/Overview.pdf) |
 
 ### 2. Qualitative Intelligence
 
@@ -54,14 +54,13 @@ strategic priorities, engagement models, new business areas, leadership
 changes, and sustainability commitments.
 
 ![TrustRAG Qualitative
-Intelligence](docs/screenshots/02-qualitative-intelligence.png)
-
+Intelligence][View Qualitative Intelligence](docs/screenshots/Qualitative.pdf) |
 ### 3. Research Copilot
 
 The Copilot accepts research questions in natural language and presents
 findings, evidence, and caveats in a consulting-style format.
 
-![TrustRAG Research Copilot](docs/screenshots/03-research-copilot.png)
+![TrustRAG Research Copilot][View Research Copilot](docs/screenshots/Research_Copilot.pdf) |
 
 ------------------------------------------------------------------------
 

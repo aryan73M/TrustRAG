@@ -29,6 +29,11 @@ data/*
 # Keep source PDFs out of GitHub
 *.pdf
 
+# Allow documentation screenshots
+!docs/
+!docs/screenshots/
+!docs/screenshots/*.pdf
+
 uploads/
 temp/
 .streamlit/secrets.toml
