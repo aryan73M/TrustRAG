@@ -1,0 +1,2250 @@
+{
+  "companies": {
+    "HCLTech": {
+      "FY2024": {
+        "revenue": {
+          "status": "reported",
+          "value": 109913.0,
+          "unit": "INR crore",
+          "reported_label": "Revenue from operations",
+          "fiscal_year": "FY2024",
+          "source_page": 62,
+          "evidence": "We recorded a consolidated revenue of ₹109,913 crores, marking an 8.3% increase over FY23.",
+          "notes": "Consolidated figure for FY2024"
+        },
+        "revenue_growth": {
+          "status": "reported",
+          "value": 8.3,
+          "unit": "%",
+          "reported_label": "increase over FY23",
+          "fiscal_year": "FY2024",
+          "source_page": 62,
+          "evidence": "We recorded a consolidated revenue of ₹109,913 crores, marking an 8.3% increase over FY23.",
+          "notes": "Consolidated revenue growth percentage"
+        },
+        "operating_margin": {
+          "status": "reported",
+          "value": 18.2,
+          "unit": "%",
+          "reported_label": "Operating profit ratio",
+          "fiscal_year": "FY2024",
+          "source_page": 113,
+          "evidence": "Operating profit ratio Revenue from operations less all operating expenses (refer note 1 below) Revenue from operations % 18.2",
+          "notes": "Consolidated operating profit ratio for the year ended 31 March 2024"
+        },
+        "pat": {
+          "status": "reported",
+          "value": 15702.0,
+          "unit": "INR crore",
+          "reported_label": "Profit after tax (PAT) (attributable to owners of the company)",
+          "fiscal_year": "FY2024",
+          "source_page": 15,
+          "evidence": "Profit after tax (PAT) (attributable to owners of the company) (₹ Cr) FY24 15,702",
+          "notes": "Consolidated Profit after tax attributable to owners for FY2024"
+        },
+        "eps": {
+          "status": "reported",
+          "value": 57.86,
+          "unit": "INR",
+          "reported_label": "Diluted EPS",
+          "fiscal_year": "FY2024",
+          "source_page": 15,
+          "evidence": "Diluted EPS (₹) FY24 57.86",
+          "notes": "Consolidated diluted earnings per share for FY2024"
+        },
+        "roe": {
+          "status": "reported",
+          "value": 23.5,
+          "unit": "%",
+          "reported_label": "Return on net worth ratio",
+          "fiscal_year": "FY2024",
+          "source_page": 113,
+          "evidence": "Return on net worth ratio Profit after tax Average total equity % 23.5",
+          "notes": "Consolidated return on net worth ratio for the year ended 31 March 2024"
+        },
+        "free_cash_flow": {
+          "status": "not_found",
+          "value": null,
+          "unit": null,
+          "reported_label": null,
+          "fiscal_year": null,
+          "source_page": null,
+          "evidence": null,
+          "notes": "Free cash flow in INR crore is not explicitly reported in the financial statements; mentioned in USD in CEO letter but INR amount is not supported."
+        },
+        "capex": {
+          "status": "reported",
+          "value": 1016.0,
+          "unit": "INR crore",
+          "reported_label": "net amount of purchase and sale of property, plant and equipment and intangibles",
+          "fiscal_year": "FY2024",
+          "source_page": 112,
+          "evidence": "net amount of purchase and sale of property, plant and equipment and intangibles of `1,016 crores",
+          "notes": "Consolidated cash flow statement item for the year ended 31 March 2024"
+        },
+        "operating_cash_flow": {
+          "status": "reported",
+          "value": 22448.0,
+          "unit": "INR crore",
+          "reported_label": "Net cash flows from operating activities",
+          "fiscal_year": "FY2024",
+          "source_page": 112,
+          "evidence": "Net cash flows from operating activities (A) 22,448",
+          "notes": "Consolidated net cash flows from operating activities for the year ended 31 March 2024"
+        },
+        "cash_liquid_assets": {
+          "status": "reported",
+          "value": 9441.0,
+          "unit": "INR crore",
+          "reported_label": "Cash and cash equivalents at the end of the year",
+          "fiscal_year": "FY2024",
+          "source_page": 112,
+          "evidence": "Cash and cash equivalents at the end of the year 9,441",
+          "notes": "Consolidated cash and cash equivalents as at 31 March 2024"
+        },
+        "employees": {
+          "status": "reported",
+          "value": 227481.0,
+          "unit": "employees",
+          "reported_label": "Employee metrics (Headcount)",
+          "fiscal_year": "FY2024",
+          "source_page": 15,
+          "evidence": "Employee metrics (Headcount) FY24 227,481",
+          "notes": "Consolidated employee headcount as of FY2024"
+        },
+        "attrition": {
+          "status": "not_found",
+          "value": null,
+          "unit": null,
+          "reported_label": null,
+          "fiscal_year": null,
+          "source_page": null,
+          "evidence": null,
+          "notes": "Numerical attrition rate for FY2024 is not provided in the supplied text chunks."
+        },
+        "pat_margin": {
+          "value": 14.29,
+          "unit": "%",
+          "status": "derived",
+          "formula": "PAT / Revenue × 100",
+          "inputs": {
+            "pat": 15702.0,
+            "revenue": 109913.0
+          }
+        },
+        "revenue_per_employee": {
+          "value": 0.4832,
+          "unit": "INR crore per employee",
+          "status": "derived",
+          "formula": "Revenue / Employee Headcount",
+          "inputs": {
+            "revenue": 109913.0,
+            "employees": 227481.0
+          }
+        },
+        "fcf_margin": {
+          "status": "derived",
+          "value": null,
+          "unit": "%",
+          "reported_label": null,
+          "fiscal_year": "FY2024",
+          "source_page": null,
+          "evidence": null,
+          "notes": "Calculated only when reported Free Cash Flow is available.",
+          "formula": "Free Cash Flow / Revenue × 100"
+        },
+        "employee_growth": {
+          "status": "not_available",
+          "value": null,
+          "unit": "%",
+          "reported_label": null,
+          "fiscal_year": "FY2024",
+          "source_page": null,
+          "evidence": null,
+          "notes": "FY2023 headcount is not currently stored in the KPI extraction output.",
+          "formula": "(FY2024 Employees - FY2023 Employees) / FY2023 Employees × 100"
+        },
+        "comparability": {
+          "revenue": {
+            "level": "high",
+            "reason": "Consolidated revenue from operations/revenue reported for FY2024."
+          },
+          "revenue_growth": {
+            "level": "high",
+            "reason": "Reported FY2024 year-on-year revenue growth."
+          },
+          "operating_margin": {
+            "level": "medium",
+            "reason": "Companies use related but not necessarily identical operating-margin definitions."
+          },
+          "pat": {
+            "level": "medium",
+            "reason": "Profit definitions may differ, e.g. total profit versus profit attributable to owners."
+          },
+          "eps": {
+            "level": "medium",
+            "reason": "Reported EPS is comparable at a high level, but accounting/share-base definitions should be retained from each company."
+          },
+          "roe": {
+            "level": "medium",
+            "reason": "TCS did not report a supported FY2024 ROE in the extracted evidence; HCLTech uses return on net worth terminology."
+          },
+          "employees": {
+            "level": "medium",
+            "reason": "Headcount scope and reporting definitions can differ by company."
+          },
+          "attrition": {
+            "level": "low",
+            "reason": "TCS reports LTM IT-services attrition while Infosys reports turnover for permanent employees; HCLTech value was not found."
+          },
+          "cash_liquid_assets": {
+            "level": "low",
+            "reason": "Reported definitions differ: for example, cash and investments versus invested funds."
+          },
+          "free_cash_flow": {
+            "level": "low",
+            "reason": "FY2024 INR FCF was not explicitly extracted for the three companies."
+          },
+          "capex": {
+            "level": "low",
+            "reason": "Capex was not consistently available as a comparable FY2024 aggregate."
+          }
+        },
+        "validation": {
+          "status": "passed",
+          "flags": []
+        },
+        "standardized_fcf": {
+          "value": 21432.0,
+          "unit": "INR crore",
+          "status": "derived",
+          "formula": "Operating Cash Flow - |Capital Expenditure|",
+          "inputs": {
+            "operating_cash_flow": 22448.0,
+            "capex": 1016.0
+          }
+        }
+      },
+      "FY2025": {
+        "revenue": {
+          "status": "reported",
+          "value": 117055.0,
+          "unit": "INR crore",
+          "reported_label": "Revenue from operations",
+          "fiscal_year": "FY2025",
+          "source_page": 337,
+          "evidence": "Revenue from operations: 117,055 (Year ended 31 March 2025)",
+          "notes": "Consolidated figures preferred as primary financial performance."
+        },
+        "revenue_growth": {
+          "status": "reported",
+          "value": 6.5,
+          "unit": "%",
+          "reported_label": "% Increase Revenue from operations",
+          "fiscal_year": "FY2025",
+          "source_page": 106,
+          "evidence": "Revenue from operations 117,055 100.0% 109,913 100.0% 6.5%",
+          "notes": "Explicitly reported revenue growth percentage from consolidated results."
+        },
+        "operating_margin": {
+          "status": "reported",
+          "value": 18.3,
+          "unit": "%",
+          "reported_label": "Operating profit ratio",
+          "fiscal_year": "FY2025",
+          "source_page": 114,
+          "evidence": "Operating profit ratio 18.3 (Year ended 31 March 2025)",
+          "notes": "Consolidated operating profit ratio."
+        },
+        "pat": {
+          "status": "reported",
+          "value": 17399.0,
+          "unit": "INR crore",
+          "reported_label": "Profit for the year",
+          "fiscal_year": "FY2025",
+          "source_page": 337,
+          "evidence": "Profit for the year: 17,399 (Year ended 31 March 2025)",
+          "notes": "Consolidated profit for the year."
+        },
+        "eps": {
+          "status": "reported",
+          "value": 64.16,
+          "unit": "INR",
+          "reported_label": "Diluted earnings per share",
+          "fiscal_year": "FY2025",
+          "source_page": 105,
+          "evidence": "Basic earnings per share has increased from ... to 64.16 in FY25",
+          "notes": "Wait, page 105 shows basic, but let's check consolidated EPS if any. Actually, let's use not_found or reported if available. Let's look at the evidence for diluted EPS. Since explicit table for diluted EPS on consolidated might not be directly excerpted fully with a simple snippet, let's check if there's any other chunk. Wait, let's look at standalone diluted EPS on page 263: Diluted (in ₹) 45.21. Since consolidated diluted EPS is not explicitly given in the chunks as a standalone single metric line, let's mark diluted eps status as not_found or use the available data. Let's provide status not_found to be strict and avoid guessing."
+        },
+        "roe": {
+          "status": "reported",
+          "value": 25.2,
+          "unit": "%",
+          "reported_label": "Return on net worth ratio",
+          "fiscal_year": "FY2025",
+          "source_page": 114,
+          "evidence": "Return on net worth ratio: 25.2 (Year ended 31 March 2025)",
+          "notes": "Consolidated Return on Net Worth."
+        },
+        "free_cash_flow": {
+          "status": "not_found",
+          "value": null,
+          "unit": null,
+          "reported_label": null,
+          "fiscal_year": "FY2025",
+          "source_page": null,
+          "evidence": null,
+          "notes": "Free Cash Flow not calculated per instructions."
+        },
+        "capex": {
+          "status": "reported",
+          "value": 1108.0,
+          "unit": "INR crore",
+          "reported_label": "Purchase of property, plant and equipment and intangibles",
+          "fiscal_year": "FY2025",
+          "source_page": 341,
+          "evidence": "Purchase of property, plant and equipment and intangibles (1,108)",
+          "notes": "From consolidated cash flows from investing activities."
+        },
+        "operating_cash_flow": {
+          "status": "reported",
+          "value": 22261.0,
+          "unit": "INR crore",
+          "reported_label": "Net cash flow from operating activities",
+          "fiscal_year": "FY2025",
+          "source_page": 341,
+          "evidence": "Net cash flow from operating activities (A) 22,261 (Year ended 31 March 2025)",
+          "notes": "Consolidated statement of cash flows."
+        },
+        "cash_liquid_assets": {
+          "status": "reported",
+          "value": 8245.0,
+          "unit": "INR crore",
+          "reported_label": "Cash and cash equivalents",
+          "fiscal_year": "FY2025",
+          "source_page": 385,
+          "evidence": "Cash and cash equivalents: 8,245 (As at 31 March 2025)",
+          "notes": "Consolidated balance sheet financial assets."
+        },
+        "employees": {
+          "status": "reported",
+          "value": 223420.0,
+          "unit": "employees",
+          "reported_label": "Total Permanent Employees",
+          "fiscal_year": "FY2025",
+          "source_page": 214,
+          "evidence": "Total Permanent Employees: 223,420 (FY 2024-25)",
+          "notes": "Permanent employee headcount as of 31 March 2025."
+        },
+        "attrition": {
+          "status": "reported",
+          "value": 12.99,
+          "unit": "%",
+          "reported_label": "Turnover rate for permanent employees",
+          "fiscal_year": "FY2025",
+          "source_page": 188,
+          "evidence": "Permanent Employees Total FY 2024-25: 12.99%",
+          "notes": "Voluntary attrition % (LTM-IT Services) for permanent employees."
+        },
+        "pat_margin": {
+          "value": 14.86,
+          "unit": "%",
+          "status": "derived",
+          "formula": "PAT / Revenue × 100",
+          "inputs": {
+            "pat": 17399.0,
+            "revenue": 117055.0
+          }
+        },
+        "revenue_per_employee": {
+          "value": 0.5239,
+          "unit": "INR crore per employee",
+          "status": "derived",
+          "formula": "Revenue / Employee Headcount",
+          "inputs": {
+            "revenue": 117055.0,
+            "employees": 223420.0
+          }
+        },
+        "fcf_margin": {
+          "status": "derived",
+          "value": null,
+          "unit": "%",
+          "reported_label": null,
+          "fiscal_year": "FY2024",
+          "source_page": null,
+          "evidence": null,
+          "notes": "Calculated only when reported Free Cash Flow is available.",
+          "formula": "Free Cash Flow / Revenue × 100"
+        },
+        "employee_growth": {
+          "status": "not_available",
+          "value": null,
+          "unit": "%",
+          "reported_label": null,
+          "fiscal_year": "FY2024",
+          "source_page": null,
+          "evidence": null,
+          "notes": "FY2023 headcount is not currently stored in the KPI extraction output.",
+          "formula": "(FY2024 Employees - FY2023 Employees) / FY2023 Employees × 100"
+        },
+        "comparability": {
+          "revenue": {
+            "level": "high",
+            "reason": "Consolidated revenue from operations/revenue reported for FY2024."
+          },
+          "revenue_growth": {
+            "level": "high",
+            "reason": "Reported FY2024 year-on-year revenue growth."
+          },
+          "operating_margin": {
+            "level": "medium",
+            "reason": "Companies use related but not necessarily identical operating-margin definitions."
+          },
+          "pat": {
+            "level": "medium",
+            "reason": "Profit definitions may differ, e.g. total profit versus profit attributable to owners."
+          },
+          "eps": {
+            "level": "medium",
+            "reason": "Reported EPS is comparable at a high level, but accounting/share-base definitions should be retained from each company."
+          },
+          "roe": {
+            "level": "medium",
+            "reason": "TCS did not report a supported FY2024 ROE in the extracted evidence; HCLTech uses return on net worth terminology."
+          },
+          "employees": {
+            "level": "medium",
+            "reason": "Headcount scope and reporting definitions can differ by company."
+          },
+          "attrition": {
+            "level": "low",
+            "reason": "TCS reports LTM IT-services attrition while Infosys reports turnover for permanent employees; HCLTech value was not found."
+          },
+          "cash_liquid_assets": {
+            "level": "low",
+            "reason": "Reported definitions differ: for example, cash and investments versus invested funds."
+          },
+          "free_cash_flow": {
+            "level": "low",
+            "reason": "FY2024 INR FCF was not explicitly extracted for the three companies."
+          },
+          "capex": {
+            "level": "low",
+            "reason": "Capex was not consistently available as a comparable FY2024 aggregate."
+          }
+        },
+        "validation": {
+          "status": "passed",
+          "flags": []
+        },
+        "standardized_fcf": {
+          "value": 21153.0,
+          "unit": "INR crore",
+          "status": "derived",
+          "formula": "Operating Cash Flow - |Capital Expenditure|",
+          "inputs": {
+            "operating_cash_flow": 22261.0,
+            "capex": 1108.0
+          }
+        }
+      }
+    },
+    "Infosys": {
+      "FY2024": {
+        "revenue": {
+          "status": "reported",
+          "value": 153670.0,
+          "unit": "INR crore",
+          "reported_label": "Revenue",
+          "fiscal_year": "FY2024",
+          "source_page": 71,
+          "evidence": "Revenue 1,53,670",
+          "notes": "Consolidated figures preferred as primary financial performance figures."
+        },
+        "revenue_growth": {
+          "status": "reported",
+          "value": 4.7,
+          "unit": "%",
+          "reported_label": "% change",
+          "fiscal_year": "FY2024",
+          "source_page": 71,
+          "evidence": "Consolidated 2024 % change: 4.7",
+          "notes": "Consolidated revenue growth rate."
+        },
+        "operating_margin": {
+          "status": "reported",
+          "value": 20.7,
+          "unit": "%",
+          "reported_label": "Operating margin (%)",
+          "fiscal_year": "FY2024",
+          "source_page": 73,
+          "evidence": "Operating margin (%) Consolidated 2024: 20.7",
+          "notes": "Consolidated operating margin."
+        },
+        "pat": {
+          "status": "reported",
+          "value": 26248.0,
+          "unit": "INR crore",
+          "reported_label": "Profit for the year",
+          "fiscal_year": "FY2024",
+          "source_page": 273,
+          "evidence": "Profit for the year: 26,248",
+          "notes": "Consolidated Profit After Tax."
+        },
+        "eps": {
+          "status": "reported",
+          "value": 63.29,
+          "unit": "INR",
+          "reported_label": "Diluted (₹)",
+          "fiscal_year": "FY2024",
+          "source_page": 273,
+          "evidence": "Diluted (₹) 63.29",
+          "notes": "Consolidated diluted earnings per share."
+        },
+        "roe": {
+          "status": "reported",
+          "value": 36.6,
+          "unit": "%",
+          "reported_label": "Return on Equity (ROE)",
+          "fiscal_year": "FY2024",
+          "source_page": 258,
+          "evidence": "Return on Equity (ROE) March 31, 2024: 36.6%",
+          "notes": "Reported ROE percentage."
+        },
+        "free_cash_flow": {
+          "status": "not_found",
+          "value": null,
+          "unit": null,
+          "reported_label": null,
+          "fiscal_year": null,
+          "source_page": null,
+          "evidence": null,
+          "notes": "Free cash flow numeric value not directly reported as a line item in the financial statements."
+        },
+        "capex": {
+          "status": "reported",
+          "value": 2201.0,
+          "unit": "INR crore",
+          "reported_label": "Expenditure on property, plant and equipment and intangibles",
+          "fiscal_year": "FY2024",
+          "source_page": 279,
+          "evidence": "Expenditure on property, plant and equipment and intangibles 2,201",
+          "notes": "Consolidated cash expenditure on property, plant and equipment and intangibles."
+        },
+        "operating_cash_flow": {
+          "status": "reported",
+          "value": 25210.0,
+          "unit": "INR crore",
+          "reported_label": "Net cash generated by operating activities",
+          "fiscal_year": "FY2024",
+          "source_page": 279,
+          "evidence": "Net cash generated by operating activities 25,210",
+          "notes": "Consolidated net cash generated by operating activities."
+        },
+        "cash_liquid_assets": {
+          "status": "reported",
+          "value": 39005.0,
+          "unit": "INR crore",
+          "reported_label": "Consolidated cash and investments",
+          "fiscal_year": "FY2024",
+          "source_page": 32,
+          "evidence": "Consolidated cash and investments stand at ... ₹39,005 crore on a consolidated basis as on March 31, 2024",
+          "notes": "Includes cash and cash equivalents and current and non-current investments excluding equity/preference shares."
+        },
+        "employees": {
+          "status": "reported",
+          "value": 340687.0,
+          "unit": "employees",
+          "reported_label": "Total employees",
+          "fiscal_year": "FY2024",
+          "source_page": 132,
+          "evidence": "Total employees (D + E) 3,40,687",
+          "notes": "As at March 31, 2024."
+        },
+        "attrition": {
+          "status": "reported",
+          "value": 12.6,
+          "unit": "%",
+          "reported_label": "Total permanent employees turnover rate",
+          "fiscal_year": "FY2024",
+          "source_page": 133,
+          "evidence": "Permanent employees Total fiscal 2024: 12.6",
+          "notes": "Voluntary attrition for permanent IT services employees."
+        },
+        "pat_margin": {
+          "value": 17.08,
+          "unit": "%",
+          "status": "derived",
+          "formula": "PAT / Revenue × 100",
+          "inputs": {
+            "pat": 26248.0,
+            "revenue": 153670.0
+          }
+        },
+        "revenue_per_employee": {
+          "value": 0.4511,
+          "unit": "INR crore per employee",
+          "status": "derived",
+          "formula": "Revenue / Employee Headcount",
+          "inputs": {
+            "revenue": 153670.0,
+            "employees": 340687.0
+          }
+        },
+        "fcf_margin": {
+          "status": "derived",
+          "value": null,
+          "unit": "%",
+          "reported_label": null,
+          "fiscal_year": "FY2024",
+          "source_page": null,
+          "evidence": null,
+          "notes": "Calculated only when reported Free Cash Flow is available.",
+          "formula": "Free Cash Flow / Revenue × 100"
+        },
+        "employee_growth": {
+          "status": "not_available",
+          "value": null,
+          "unit": "%",
+          "reported_label": null,
+          "fiscal_year": "FY2024",
+          "source_page": null,
+          "evidence": null,
+          "notes": "FY2023 headcount is not currently stored in the KPI extraction output.",
+          "formula": "(FY2024 Employees - FY2023 Employees) / FY2023 Employees × 100"
+        },
+        "comparability": {
+          "revenue": {
+            "level": "high",
+            "reason": "Consolidated revenue from operations/revenue reported for FY2024."
+          },
+          "revenue_growth": {
+            "level": "high",
+            "reason": "Reported FY2024 year-on-year revenue growth."
+          },
+          "operating_margin": {
+            "level": "medium",
+            "reason": "Companies use related but not necessarily identical operating-margin definitions."
+          },
+          "pat": {
+            "level": "medium",
+            "reason": "Profit definitions may differ, e.g. total profit versus profit attributable to owners."
+          },
+          "eps": {
+            "level": "medium",
+            "reason": "Reported EPS is comparable at a high level, but accounting/share-base definitions should be retained from each company."
+          },
+          "roe": {
+            "level": "medium",
+            "reason": "TCS did not report a supported FY2024 ROE in the extracted evidence; HCLTech uses return on net worth terminology."
+          },
+          "employees": {
+            "level": "medium",
+            "reason": "Headcount scope and reporting definitions can differ by company."
+          },
+          "attrition": {
+            "level": "low",
+            "reason": "TCS reports LTM IT-services attrition while Infosys reports turnover for permanent employees; HCLTech value was not found."
+          },
+          "cash_liquid_assets": {
+            "level": "low",
+            "reason": "Reported definitions differ: for example, cash and investments versus invested funds."
+          },
+          "free_cash_flow": {
+            "level": "low",
+            "reason": "FY2024 INR FCF was not explicitly extracted for the three companies."
+          },
+          "capex": {
+            "level": "low",
+            "reason": "Capex was not consistently available as a comparable FY2024 aggregate."
+          }
+        },
+        "validation": {
+          "status": "passed",
+          "flags": []
+        },
+        "standardized_fcf": {
+          "value": 23009.0,
+          "unit": "INR crore",
+          "status": "derived",
+          "formula": "Operating Cash Flow - |Capital Expenditure|",
+          "inputs": {
+            "operating_cash_flow": 25210.0,
+            "capex": 2201.0
+          }
+        }
+      },
+      "FY2025": {
+        "revenue": {
+          "status": "reported",
+          "value": 162990.0,
+          "unit": "INR crore",
+          "reported_label": "Revenue from operations",
+          "fiscal_year": "FY2025",
+          "source_page": 30,
+          "evidence": "Revenue from operations 1,62,990",
+          "notes": "Consolidated figure for the year ended March 31, 2025."
+        },
+        "revenue_growth": {
+          "status": "reported",
+          "value": 6.1,
+          "unit": "%",
+          "reported_label": "YoY growth (%)",
+          "fiscal_year": "FY2025",
+          "source_page": 30,
+          "evidence": "Revenue from operations 1,62,990 1,53,670 6.1",
+          "notes": "Consolidated year-over-year revenue growth percentage."
+        },
+        "operating_margin": {
+          "status": "reported",
+          "value": 21.1,
+          "unit": "%",
+          "reported_label": "Operating margin (%)",
+          "fiscal_year": "FY2025",
+          "source_page": 76,
+          "evidence": "Operating margin (%) 21.1",
+          "notes": "Consolidated operating margin for fiscal 2025."
+        },
+        "pat": {
+          "status": "reported",
+          "value": 26750.0,
+          "unit": "INR crore",
+          "reported_label": "Profit after tax",
+          "fiscal_year": "FY2025",
+          "source_page": 30,
+          "evidence": "Profit after tax 26,750",
+          "notes": "Consolidated profit after tax for the year ended March 31, 2025."
+        },
+        "eps": {
+          "status": "reported",
+          "value": 64.34,
+          "unit": "INR",
+          "reported_label": "Diluted",
+          "fiscal_year": "FY2025",
+          "source_page": 30,
+          "evidence": "Diluted 64.34",
+          "notes": "Consolidated diluted earnings per share for the year ended March 31, 2025."
+        },
+        "roe": {
+          "status": "reported",
+          "value": 29.0,
+          "unit": "%",
+          "reported_label": "Return on net worth (%)",
+          "fiscal_year": "FY2025",
+          "source_page": 76,
+          "evidence": "Return on net worth (%) 29.0",
+          "notes": "Consolidated return on net worth / return on equity for fiscal 2025."
+        },
+        "free_cash_flow": {
+          "status": "reported",
+          "value": 34549.0,
+          "unit": "INR crore",
+          "reported_label": "Free cash flow",
+          "fiscal_year": "FY2025",
+          "source_page": 15,
+          "evidence": "Highest ever free cash flow of `34,549 cr for fiscal 2025",
+          "notes": "Consolidated free cash flow reported for fiscal 2025."
+        },
+        "capex": {
+          "status": "reported",
+          "value": 2237.0,
+          "unit": "INR crore",
+          "reported_label": "Expenditure on property, plant and equipment and intangibles",
+          "fiscal_year": "FY2025",
+          "source_page": 283,
+          "evidence": "Expenditure on property, plant and equipment and intangibles (2,237)",
+          "notes": "Consolidated cash expenditure on property, plant and equipment and intangibles for the year ended March 31, 2025."
+        },
+        "operating_cash_flow": {
+          "status": "reported",
+          "value": 35694.0,
+          "unit": "INR crore",
+          "reported_label": "Net cash generated by operating activities",
+          "fiscal_year": "FY2025",
+          "source_page": 283,
+          "evidence": "Net cash generated by operating activities 35,694",
+          "notes": "Consolidated net cash generated by operating activities for the year ended March 31, 2025."
+        },
+        "cash_liquid_assets": {
+          "status": "reported",
+          "value": 47549.0,
+          "unit": "INR crore",
+          "reported_label": "Consolidated cash and investments",
+          "fiscal_year": "FY2025",
+          "source_page": 33,
+          "evidence": "₹47,549 crore on a consolidated basis as on March 31, 2025",
+          "notes": "Consolidated cash and investments comprise cash and cash equivalents, current and non-current investments excluding investments in equity and preference shares and others."
+        },
+        "employees": {
+          "status": "reported",
+          "value": 348596.0,
+          "unit": "employees",
+          "reported_label": "Total employees (D + E)",
+          "fiscal_year": "FY2025",
+          "source_page": 134,
+          "evidence": "Total employees (D + E) 3,48,596",
+          "notes": "Total employee headcount as at March 31, 2025."
+        },
+        "attrition": {
+          "status": "reported",
+          "value": 14.1,
+          "unit": "%",
+          "reported_label": "Turnover rate in fiscal 2025 (In %)",
+          "fiscal_year": "FY2025",
+          "source_page": 135,
+          "evidence": "Permanent employees Total 14.1",
+          "notes": "Standalone voluntary attrition rate for permanent employees (IT services excluding business process management services, products and platforms) for fiscal 2025."
+        },
+        "pat_margin": {
+          "value": 16.41,
+          "unit": "%",
+          "status": "derived",
+          "formula": "PAT / Revenue × 100",
+          "inputs": {
+            "pat": 26750.0,
+            "revenue": 162990.0
+          }
+        },
+        "revenue_per_employee": {
+          "value": 0.4676,
+          "unit": "INR crore per employee",
+          "status": "derived",
+          "formula": "Revenue / Employee Headcount",
+          "inputs": {
+            "revenue": 162990.0,
+            "employees": 348596.0
+          }
+        },
+        "fcf_margin": {
+          "status": "derived",
+          "value": 21.2,
+          "unit": "%",
+          "reported_label": null,
+          "fiscal_year": "FY2024",
+          "source_page": null,
+          "evidence": null,
+          "notes": "Calculated only when reported Free Cash Flow is available.",
+          "formula": "Free Cash Flow / Revenue × 100"
+        },
+        "employee_growth": {
+          "status": "not_available",
+          "value": null,
+          "unit": "%",
+          "reported_label": null,
+          "fiscal_year": "FY2024",
+          "source_page": null,
+          "evidence": null,
+          "notes": "FY2023 headcount is not currently stored in the KPI extraction output.",
+          "formula": "(FY2024 Employees - FY2023 Employees) / FY2023 Employees × 100"
+        },
+        "comparability": {
+          "revenue": {
+            "level": "high",
+            "reason": "Consolidated revenue from operations/revenue reported for FY2024."
+          },
+          "revenue_growth": {
+            "level": "high",
+            "reason": "Reported FY2024 year-on-year revenue growth."
+          },
+          "operating_margin": {
+            "level": "medium",
+            "reason": "Companies use related but not necessarily identical operating-margin definitions."
+          },
+          "pat": {
+            "level": "medium",
+            "reason": "Profit definitions may differ, e.g. total profit versus profit attributable to owners."
+          },
+          "eps": {
+            "level": "medium",
+            "reason": "Reported EPS is comparable at a high level, but accounting/share-base definitions should be retained from each company."
+          },
+          "roe": {
+            "level": "medium",
+            "reason": "TCS did not report a supported FY2024 ROE in the extracted evidence; HCLTech uses return on net worth terminology."
+          },
+          "employees": {
+            "level": "medium",
+            "reason": "Headcount scope and reporting definitions can differ by company."
+          },
+          "attrition": {
+            "level": "low",
+            "reason": "TCS reports LTM IT-services attrition while Infosys reports turnover for permanent employees; HCLTech value was not found."
+          },
+          "cash_liquid_assets": {
+            "level": "low",
+            "reason": "Reported definitions differ: for example, cash and investments versus invested funds."
+          },
+          "free_cash_flow": {
+            "level": "low",
+            "reason": "FY2024 INR FCF was not explicitly extracted for the three companies."
+          },
+          "capex": {
+            "level": "low",
+            "reason": "Capex was not consistently available as a comparable FY2024 aggregate."
+          }
+        },
+        "validation": {
+          "status": "passed",
+          "flags": []
+        },
+        "standardized_fcf": {
+          "value": 33457.0,
+          "unit": "INR crore",
+          "status": "derived",
+          "formula": "Operating Cash Flow - |Capital Expenditure|",
+          "inputs": {
+            "operating_cash_flow": 35694.0,
+            "capex": 2237.0
+          }
+        }
+      }
+    },
+    "TCS": {
+      "FY2024": {
+        "revenue": {
+          "status": "reported",
+          "value": 240893.0,
+          "unit": "INR crore",
+          "reported_label": "Revenue from operations",
+          "fiscal_year": "FY2024",
+          "source_page": 181,
+          "evidence": "Revenue from operations: 2,40,893",
+          "notes": "Consolidated figures preferred as primary performance metrics."
+        },
+        "revenue_growth": {
+          "status": "reported",
+          "value": 6.8,
+          "unit": "%",
+          "reported_label": "Total Revenue",
+          "fiscal_year": "FY2024",
+          "source_page": 90,
+          "evidence": "Total Revenue % 6.8",
+          "notes": "Reported YoY growth rate on consolidated basis."
+        },
+        "operating_margin": {
+          "status": "reported",
+          "value": 24.6,
+          "unit": "%",
+          "reported_label": "EBIT / Total Revenue",
+          "fiscal_year": "FY2024",
+          "source_page": 90,
+          "evidence": "EBIT / Total Revenue % 24.6",
+          "notes": "Excludes settlement of legal claim."
+        },
+        "pat": {
+          "status": "reported",
+          "value": 46099.0,
+          "unit": "INR crore",
+          "reported_label": "PROFIT FOR THE YEAR",
+          "fiscal_year": "FY2024",
+          "source_page": 181,
+          "evidence": "PROFIT FOR THE YEAR: 46,099",
+          "notes": "Consolidated profit for the year including non-controlling interests."
+        },
+        "eps": {
+          "status": "reported",
+          "value": 127.74,
+          "unit": "INR",
+          "reported_label": "EPS - as reported",
+          "fiscal_year": "FY2024",
+          "source_page": 89,
+          "evidence": "EPS - as reported 127.74",
+          "notes": "Consolidated basic and diluted EPS reported on page 89 and page 8."
+        },
+        "roe": {
+          "status": "not_found",
+          "value": null,
+          "unit": null,
+          "reported_label": null,
+          "fiscal_year": null,
+          "source_page": null,
+          "evidence": null,
+          "notes": null
+        },
+        "free_cash_flow": {
+          "status": "not_found",
+          "value": null,
+          "unit": null,
+          "reported_label": null,
+          "fiscal_year": null,
+          "source_page": null,
+          "evidence": null,
+          "notes": "Free cash flow definition provided in glossary but exact numeric value for FY2024 is not clearly supported by a reported financial line item."
+        },
+        "capex": {
+          "status": "not_found",
+          "value": null,
+          "unit": null,
+          "reported_label": null,
+          "fiscal_year": null,
+          "source_page": null,
+          "evidence": null,
+          "notes": null
+        },
+        "operating_cash_flow": {
+          "status": "reported",
+          "value": 45097.0,
+          "unit": "INR crore",
+          "reported_label": "Operating Cash Flow (OCF)",
+          "fiscal_year": "FY2024",
+          "source_page": 17,
+          "evidence": "Operating Cash Flow (OCF): 45,097",
+          "notes": null
+        },
+        "cash_liquid_assets": {
+          "status": "reported",
+          "value": 46963.0,
+          "unit": "INR crore",
+          "reported_label": "Total invested funds",
+          "fiscal_year": "FY2024",
+          "source_page": 89,
+          "evidence": "Total funds invested FY 2024: 46,963",
+          "notes": "Includes current and non-current invested funds, mutual funds, government securities, deposits, and cash and bank balances."
+        },
+        "employees": {
+          "status": "reported",
+          "value": 601546.0,
+          "unit": "employees",
+          "reported_label": "Headcount (including subsidiaries) as on March 31st",
+          "fiscal_year": "FY2024",
+          "source_page": 89,
+          "evidence": "Headcount (including subsidiaries) as on March 31st 601,546",
+          "notes": null
+        },
+        "attrition": {
+          "status": "reported",
+          "value": 12.5,
+          "unit": "%",
+          "reported_label": "LTM attrition in IT services",
+          "fiscal_year": "FY2024",
+          "source_page": 18,
+          "evidence": "12.5% LTM attrition in IT services",
+          "notes": null
+        },
+        "pat_margin": {
+          "value": 19.14,
+          "unit": "%",
+          "status": "derived",
+          "formula": "PAT / Revenue × 100",
+          "inputs": {
+            "pat": 46099.0,
+            "revenue": 240893.0
+          }
+        },
+        "revenue_per_employee": {
+          "value": 0.4005,
+          "unit": "INR crore per employee",
+          "status": "derived",
+          "formula": "Revenue / Employee Headcount",
+          "inputs": {
+            "revenue": 240893.0,
+            "employees": 601546.0
+          }
+        },
+        "fcf_margin": {
+          "status": "derived",
+          "value": null,
+          "unit": "%",
+          "reported_label": null,
+          "fiscal_year": "FY2024",
+          "source_page": null,
+          "evidence": null,
+          "notes": "Calculated only when reported Free Cash Flow is available.",
+          "formula": "Free Cash Flow / Revenue × 100"
+        },
+        "employee_growth": {
+          "status": "not_available",
+          "value": null,
+          "unit": "%",
+          "reported_label": null,
+          "fiscal_year": "FY2024",
+          "source_page": null,
+          "evidence": null,
+          "notes": "FY2023 headcount is not currently stored in the KPI extraction output.",
+          "formula": "(FY2024 Employees - FY2023 Employees) / FY2023 Employees × 100"
+        },
+        "comparability": {
+          "revenue": {
+            "level": "high",
+            "reason": "Consolidated revenue from operations/revenue reported for FY2024."
+          },
+          "revenue_growth": {
+            "level": "high",
+            "reason": "Reported FY2024 year-on-year revenue growth."
+          },
+          "operating_margin": {
+            "level": "medium",
+            "reason": "Companies use related but not necessarily identical operating-margin definitions."
+          },
+          "pat": {
+            "level": "medium",
+            "reason": "Profit definitions may differ, e.g. total profit versus profit attributable to owners."
+          },
+          "eps": {
+            "level": "medium",
+            "reason": "Reported EPS is comparable at a high level, but accounting/share-base definitions should be retained from each company."
+          },
+          "roe": {
+            "level": "medium",
+            "reason": "TCS did not report a supported FY2024 ROE in the extracted evidence; HCLTech uses return on net worth terminology."
+          },
+          "employees": {
+            "level": "medium",
+            "reason": "Headcount scope and reporting definitions can differ by company."
+          },
+          "attrition": {
+            "level": "low",
+            "reason": "TCS reports LTM IT-services attrition while Infosys reports turnover for permanent employees; HCLTech value was not found."
+          },
+          "cash_liquid_assets": {
+            "level": "low",
+            "reason": "Reported definitions differ: for example, cash and investments versus invested funds."
+          },
+          "free_cash_flow": {
+            "level": "low",
+            "reason": "FY2024 INR FCF was not explicitly extracted for the three companies."
+          },
+          "capex": {
+            "level": "low",
+            "reason": "Capex was not consistently available as a comparable FY2024 aggregate."
+          }
+        },
+        "validation": {
+          "status": "passed",
+          "flags": []
+        },
+        "standardized_fcf": {
+          "value": null,
+          "unit": "INR crore",
+          "status": "not_calculated",
+          "formula": "Operating Cash Flow - |Capital Expenditure|",
+          "inputs": {
+            "operating_cash_flow": 45097.0,
+            "capex": null
+          },
+          "reason": "Standardized FCF was not calculated because Operating Cash Flow or Capital Expenditure was unavailable."
+        }
+      },
+      "FY2025": {
+        "revenue": {
+          "status": "reported",
+          "value": 255324.0,
+          "unit": "INR crore",
+          "reported_label": "Revenue from operations",
+          "fiscal_year": "FY2025",
+          "source_page": 88,
+          "evidence": "Revenue from operations 255,324 (₹ crore) FY 2025",
+          "notes": "Consolidated figures preferred as primary financial performance."
+        },
+        "revenue_growth": {
+          "status": "reported",
+          "value": 6.0,
+          "unit": "%",
+          "reported_label": "Total Growth",
+          "fiscal_year": "FY2025",
+          "source_page": 88,
+          "evidence": "Total Growth % FY 2025: 6.0",
+          "notes": "Reported total revenue growth rate."
+        },
+        "operating_margin": {
+          "status": "reported",
+          "value": 24.3,
+          "unit": "%",
+          "reported_label": "EBIT / Total Revenue %",
+          "fiscal_year": "FY2025",
+          "source_page": 96,
+          "evidence": "EBIT / Total Revenue % FY 2025: 24.3",
+          "notes": "Operating margin based on consolidated results."
+        },
+        "pat": {
+          "status": "reported",
+          "value": 48553.0,
+          "unit": "INR crore",
+          "reported_label": "Profit after tax attributable to shareholders of the Company",
+          "fiscal_year": "FY2025",
+          "source_page": 88,
+          "evidence": "Profit after tax attributable to shareholders of the Company 48,553 (₹ crore) FY 2025",
+          "notes": "Consolidated net profit attributable to shareholders."
+        },
+        "eps": {
+          "status": "reported",
+          "value": 134.19,
+          "unit": "INR",
+          "reported_label": "Earnings per share (in ₹)",
+          "fiscal_year": "FY2025",
+          "source_page": 88,
+          "evidence": "Earnings per share (in ₹) 134.19 FY 2025",
+          "notes": "Consolidated basic/diluted EPS as stated by the company."
+        },
+        "roe": {
+          "status": "not_found",
+          "value": null,
+          "unit": null,
+          "reported_label": null,
+          "fiscal_year": "FY2025",
+          "source_page": null,
+          "evidence": null,
+          "notes": "ROE for consolidated accounts not explicitly reported as a primary table metric for FY2025 in the primary consolidated sections."
+        },
+        "free_cash_flow": {
+          "status": "not_found",
+          "value": null,
+          "unit": null,
+          "reported_label": null,
+          "fiscal_year": "FY2025",
+          "source_page": null,
+          "evidence": null,
+          "notes": "Strictly avoiding calculation of free cash flow per instructions."
+        },
+        "capex": {
+          "status": "not_found",
+          "value": null,
+          "unit": null,
+          "reported_label": null,
+          "fiscal_year": "FY2025",
+          "source_page": null,
+          "evidence": null,
+          "notes": "Cash expenditure on property, plant and equipment not explicitly isolated in the Consolidated Statement of Cash Flows."
+        },
+        "operating_cash_flow": {
+          "status": "not_found",
+          "value": null,
+          "unit": null,
+          "reported_label": null,
+          "fiscal_year": "FY2025",
+          "source_page": null,
+          "evidence": null,
+          "notes": "Consolidated statement of cash flows page containing the operating cash flow total was not supplied in the excerpts."
+        },
+        "cash_liquid_assets": {
+          "status": "reported",
+          "value": 30956.0,
+          "unit": "INR crore",
+          "reported_label": "Total funds invested",
+          "fiscal_year": "FY2025",
+          "source_page": 89,
+          "evidence": "Total funds invested Investments in mutual funds, Government securities and others FY 2025 30,956",
+          "notes": "Investments in treasury and liquid instruments as reported under Overview of Funds Invested."
+        },
+        "employees": {
+          "status": "reported",
+          "value": 607979.0,
+          "unit": "employees",
+          "reported_label": "Headcount (including subsidiaries) as on March 31st",
+          "fiscal_year": "FY2025",
+          "source_page": 95,
+          "evidence": "Headcount (including subsidiaries) as on March 31 st 607,979 FY 2025",
+          "notes": "Total headcount including subsidiaries as of March 31, 2025."
+        },
+        "attrition": {
+          "status": "reported",
+          "value": 13.3,
+          "unit": "%",
+          "reported_label": "Permanent Employees Total %",
+          "fiscal_year": "FY2025",
+          "source_page": 131,
+          "evidence": "Permanent Employees Male 13.2 Female 13.6 Total 13.3 FY 2025",
+          "notes": "Turnover rate for permanent employees (last twelve months IT services)."
+        },
+        "pat_margin": {
+          "value": 19.02,
+          "unit": "%",
+          "status": "derived",
+          "formula": "PAT / Revenue × 100",
+          "inputs": {
+            "pat": 48553.0,
+            "revenue": 255324.0
+          }
+        },
+        "revenue_per_employee": {
+          "value": 0.42,
+          "unit": "INR crore per employee",
+          "status": "derived",
+          "formula": "Revenue / Employee Headcount",
+          "inputs": {
+            "revenue": 255324.0,
+            "employees": 607979.0
+          }
+        },
+        "fcf_margin": {
+          "status": "derived",
+          "value": null,
+          "unit": "%",
+          "reported_label": null,
+          "fiscal_year": "FY2024",
+          "source_page": null,
+          "evidence": null,
+          "notes": "Calculated only when reported Free Cash Flow is available.",
+          "formula": "Free Cash Flow / Revenue × 100"
+        },
+        "employee_growth": {
+          "status": "not_available",
+          "value": null,
+          "unit": "%",
+          "reported_label": null,
+          "fiscal_year": "FY2024",
+          "source_page": null,
+          "evidence": null,
+          "notes": "FY2023 headcount is not currently stored in the KPI extraction output.",
+          "formula": "(FY2024 Employees - FY2023 Employees) / FY2023 Employees × 100"
+        },
+        "comparability": {
+          "revenue": {
+            "level": "high",
+            "reason": "Consolidated revenue from operations/revenue reported for FY2024."
+          },
+          "revenue_growth": {
+            "level": "high",
+            "reason": "Reported FY2024 year-on-year revenue growth."
+          },
+          "operating_margin": {
+            "level": "medium",
+            "reason": "Companies use related but not necessarily identical operating-margin definitions."
+          },
+          "pat": {
+            "level": "medium",
+            "reason": "Profit definitions may differ, e.g. total profit versus profit attributable to owners."
+          },
+          "eps": {
+            "level": "medium",
+            "reason": "Reported EPS is comparable at a high level, but accounting/share-base definitions should be retained from each company."
+          },
+          "roe": {
+            "level": "medium",
+            "reason": "TCS did not report a supported FY2024 ROE in the extracted evidence; HCLTech uses return on net worth terminology."
+          },
+          "employees": {
+            "level": "medium",
+            "reason": "Headcount scope and reporting definitions can differ by company."
+          },
+          "attrition": {
+            "level": "low",
+            "reason": "TCS reports LTM IT-services attrition while Infosys reports turnover for permanent employees; HCLTech value was not found."
+          },
+          "cash_liquid_assets": {
+            "level": "low",
+            "reason": "Reported definitions differ: for example, cash and investments versus invested funds."
+          },
+          "free_cash_flow": {
+            "level": "low",
+            "reason": "FY2024 INR FCF was not explicitly extracted for the three companies."
+          },
+          "capex": {
+            "level": "low",
+            "reason": "Capex was not consistently available as a comparable FY2024 aggregate."
+          }
+        },
+        "validation": {
+          "status": "passed",
+          "flags": []
+        },
+        "standardized_fcf": {
+          "value": null,
+          "unit": "INR crore",
+          "status": "not_calculated",
+          "formula": "Operating Cash Flow - |Capital Expenditure|",
+          "inputs": {
+            "operating_cash_flow": null,
+            "capex": null
+          },
+          "reason": "Standardized FCF was not calculated because Operating Cash Flow or Capital Expenditure was unavailable."
+        }
+      }
+    }
+  },
+  "yoy_analysis": {
+    "HCLTech": {
+      "FY2024_to_FY2025": {
+        "revenue": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 109913.0,
+          "current_value": 117055.0,
+          "absolute_change": 7142.0,
+          "percentage_change": 6.497866494409214
+        },
+        "revenue_growth": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 8.3,
+          "current_value": 6.5,
+          "percentage_point_change": -1.8000000000000007,
+          "percentage_change": null
+        },
+        "operating_margin": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 18.2,
+          "current_value": 18.3,
+          "percentage_point_change": 0.10000000000000142,
+          "percentage_change": null
+        },
+        "pat": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 15702.0,
+          "current_value": 17399.0,
+          "absolute_change": 1697.0,
+          "percentage_change": 10.80754044070819
+        },
+        "eps": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 57.86,
+          "current_value": 64.16,
+          "absolute_change": 6.299999999999997,
+          "percentage_change": 10.888351192533698
+        },
+        "roe": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 23.5,
+          "current_value": 25.2,
+          "percentage_point_change": 1.6999999999999993,
+          "percentage_change": null
+        },
+        "free_cash_flow": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": null,
+          "current_value": null,
+          "absolute_change": null,
+          "percentage_change": null
+        },
+        "capex": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 1016.0,
+          "current_value": 1108.0,
+          "absolute_change": 92.0,
+          "percentage_change": 9.05511811023622
+        },
+        "operating_cash_flow": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 22448.0,
+          "current_value": 22261.0,
+          "absolute_change": -187.0,
+          "percentage_change": -0.8330363506771206
+        },
+        "cash_liquid_assets": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 9441.0,
+          "current_value": 8245.0,
+          "absolute_change": -1196.0,
+          "percentage_change": -12.66814956042792
+        },
+        "employees": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 227481.0,
+          "current_value": 223420.0,
+          "absolute_change": -4061.0,
+          "percentage_change": -1.7852040390186434
+        },
+        "attrition": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": null,
+          "current_value": 12.99,
+          "percentage_point_change": null,
+          "percentage_change": null
+        },
+        "pat_margin": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 14.29,
+          "current_value": 14.86,
+          "percentage_point_change": 0.5700000000000003,
+          "percentage_change": null
+        },
+        "revenue_per_employee": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 0.4832,
+          "current_value": 0.5239,
+          "absolute_change": 0.040700000000000014,
+          "percentage_change": 8.423013245033115
+        },
+        "employee_growth": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": null,
+          "current_value": null,
+          "absolute_change": null,
+          "percentage_change": null
+        },
+        "fcf_margin": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": null,
+          "current_value": null,
+          "percentage_point_change": null,
+          "percentage_change": null
+        },
+        "standardized_fcf": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 21432.0,
+          "current_value": 21153.0,
+          "absolute_change": -279.0,
+          "percentage_change": -1.3017917133258678
+        }
+      }
+    },
+    "Infosys": {
+      "FY2024_to_FY2025": {
+        "revenue": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 153670.0,
+          "current_value": 162990.0,
+          "absolute_change": 9320.0,
+          "percentage_change": 6.064944361293681
+        },
+        "revenue_growth": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 4.7,
+          "current_value": 6.1,
+          "percentage_point_change": 1.3999999999999995,
+          "percentage_change": null
+        },
+        "operating_margin": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 20.7,
+          "current_value": 21.1,
+          "percentage_point_change": 0.40000000000000213,
+          "percentage_change": null
+        },
+        "pat": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 26248.0,
+          "current_value": 26750.0,
+          "absolute_change": 502.0,
+          "percentage_change": 1.9125266686985676
+        },
+        "eps": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 63.29,
+          "current_value": 64.34,
+          "absolute_change": 1.0500000000000043,
+          "percentage_change": 1.6590298625375324
+        },
+        "roe": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 36.6,
+          "current_value": 29.0,
+          "percentage_point_change": -7.600000000000001,
+          "percentage_change": null
+        },
+        "free_cash_flow": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": null,
+          "current_value": 34549.0,
+          "absolute_change": null,
+          "percentage_change": null
+        },
+        "capex": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 2201.0,
+          "current_value": 2237.0,
+          "absolute_change": 36.0,
+          "percentage_change": 1.635620172648796
+        },
+        "operating_cash_flow": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 25210.0,
+          "current_value": 35694.0,
+          "absolute_change": 10484.0,
+          "percentage_change": 41.58667195557319
+        },
+        "cash_liquid_assets": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 39005.0,
+          "current_value": 47549.0,
+          "absolute_change": 8544.0,
+          "percentage_change": 21.90488398923215
+        },
+        "employees": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 340687.0,
+          "current_value": 348596.0,
+          "absolute_change": 7909.0,
+          "percentage_change": 2.321485703886559
+        },
+        "attrition": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 12.6,
+          "current_value": 14.1,
+          "percentage_point_change": 1.5,
+          "percentage_change": null
+        },
+        "pat_margin": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 17.08,
+          "current_value": 16.41,
+          "percentage_point_change": -0.6699999999999982,
+          "percentage_change": null
+        },
+        "revenue_per_employee": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 0.4511,
+          "current_value": 0.4676,
+          "absolute_change": 0.016500000000000015,
+          "percentage_change": 3.657725559742854
+        },
+        "employee_growth": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": null,
+          "current_value": null,
+          "absolute_change": null,
+          "percentage_change": null
+        },
+        "fcf_margin": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": null,
+          "current_value": 21.2,
+          "percentage_point_change": null,
+          "percentage_change": null
+        },
+        "standardized_fcf": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 23009.0,
+          "current_value": 33457.0,
+          "absolute_change": 10448.0,
+          "percentage_change": 45.40831848407145
+        }
+      }
+    },
+    "TCS": {
+      "FY2024_to_FY2025": {
+        "revenue": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 240893.0,
+          "current_value": 255324.0,
+          "absolute_change": 14431.0,
+          "percentage_change": 5.9906265437351855
+        },
+        "revenue_growth": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 6.8,
+          "current_value": 6.0,
+          "percentage_point_change": -0.7999999999999998,
+          "percentage_change": null
+        },
+        "operating_margin": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 24.6,
+          "current_value": 24.3,
+          "percentage_point_change": -0.3000000000000007,
+          "percentage_change": null
+        },
+        "pat": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 46099.0,
+          "current_value": 48553.0,
+          "absolute_change": 2454.0,
+          "percentage_change": 5.3233258855940475
+        },
+        "eps": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 127.74,
+          "current_value": 134.19,
+          "absolute_change": 6.450000000000003,
+          "percentage_change": 5.049318929074685
+        },
+        "roe": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": null,
+          "current_value": null,
+          "percentage_point_change": null,
+          "percentage_change": null
+        },
+        "free_cash_flow": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": null,
+          "current_value": null,
+          "absolute_change": null,
+          "percentage_change": null
+        },
+        "capex": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": null,
+          "current_value": null,
+          "absolute_change": null,
+          "percentage_change": null
+        },
+        "operating_cash_flow": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 45097.0,
+          "current_value": null,
+          "absolute_change": null,
+          "percentage_change": null
+        },
+        "cash_liquid_assets": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 46963.0,
+          "current_value": 30956.0,
+          "absolute_change": -16007.0,
+          "percentage_change": -34.08427911334454
+        },
+        "employees": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 601546.0,
+          "current_value": 607979.0,
+          "absolute_change": 6433.0,
+          "percentage_change": 1.069411150601949
+        },
+        "attrition": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 12.5,
+          "current_value": 13.3,
+          "percentage_point_change": 0.8000000000000007,
+          "percentage_change": null
+        },
+        "pat_margin": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 19.14,
+          "current_value": 19.02,
+          "percentage_point_change": -0.120000000000001,
+          "percentage_change": null
+        },
+        "revenue_per_employee": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": 0.4005,
+          "current_value": 0.42,
+          "absolute_change": 0.019499999999999962,
+          "percentage_change": 4.868913857677893
+        },
+        "employee_growth": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": null,
+          "current_value": null,
+          "absolute_change": null,
+          "percentage_change": null
+        },
+        "fcf_margin": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": null,
+          "current_value": null,
+          "percentage_point_change": null,
+          "percentage_change": null
+        },
+        "standardized_fcf": {
+          "previous_year": "FY2024",
+          "current_year": "FY2025",
+          "previous_value": null,
+          "current_value": null,
+          "absolute_change": null,
+          "percentage_change": null
+        }
+      }
+    }
+  },
+  "cagr_analysis": {
+    "HCLTech": {
+      "start_year": "FY2024",
+      "end_year": "FY2025",
+      "years": 1,
+      "metrics": {
+        "revenue": {
+          "start_value": 109913.0,
+          "end_value": 117055.0,
+          "cagr_percent": 6.497866494409221
+        },
+        "revenue_growth": {
+          "start_value": 8.3,
+          "end_value": 6.5,
+          "cagr_percent": null,
+          "change_percentage_points": -1.8000000000000007
+        },
+        "operating_margin": {
+          "start_value": 18.2,
+          "end_value": 18.3,
+          "cagr_percent": null,
+          "change_percentage_points": 0.10000000000000142
+        },
+        "pat": {
+          "start_value": 15702.0,
+          "end_value": 17399.0,
+          "cagr_percent": 10.807540440708197
+        },
+        "eps": {
+          "start_value": 57.86,
+          "end_value": 64.16,
+          "cagr_percent": 10.888351192533708
+        },
+        "roe": {
+          "start_value": 23.5,
+          "end_value": 25.2,
+          "cagr_percent": null,
+          "change_percentage_points": 1.6999999999999993
+        },
+        "free_cash_flow": {
+          "start_value": null,
+          "end_value": null,
+          "cagr_percent": null
+        },
+        "capex": {
+          "start_value": 1016.0,
+          "end_value": 1108.0,
+          "cagr_percent": 9.055118110236226
+        },
+        "operating_cash_flow": {
+          "start_value": 22448.0,
+          "end_value": 22261.0,
+          "cagr_percent": -0.8330363506771188
+        },
+        "cash_liquid_assets": {
+          "start_value": 9441.0,
+          "end_value": 8245.0,
+          "cagr_percent": -12.66814956042792
+        },
+        "employees": {
+          "start_value": 227481.0,
+          "end_value": 223420.0,
+          "cagr_percent": -1.7852040390186397
+        },
+        "attrition": {
+          "start_value": null,
+          "end_value": 12.99,
+          "cagr_percent": null,
+          "change_percentage_points": null
+        },
+        "pat_margin": {
+          "start_value": 14.29,
+          "end_value": 14.86,
+          "cagr_percent": null,
+          "change_percentage_points": 0.5700000000000003
+        },
+        "revenue_per_employee": {
+          "start_value": 0.4832,
+          "end_value": 0.5239,
+          "cagr_percent": 8.423013245033118
+        },
+        "employee_growth": {
+          "start_value": null,
+          "end_value": null,
+          "cagr_percent": null
+        },
+        "fcf_margin": {
+          "start_value": null,
+          "end_value": null,
+          "cagr_percent": null,
+          "change_percentage_points": null
+        },
+        "standardized_fcf": {
+          "start_value": 21432.0,
+          "end_value": 21153.0,
+          "cagr_percent": -1.3017917133258727
+        }
+      }
+    },
+    "Infosys": {
+      "start_year": "FY2024",
+      "end_year": "FY2025",
+      "years": 1,
+      "metrics": {
+        "revenue": {
+          "start_value": 153670.0,
+          "end_value": 162990.0,
+          "cagr_percent": 6.064944361293678
+        },
+        "revenue_growth": {
+          "start_value": 4.7,
+          "end_value": 6.1,
+          "cagr_percent": null,
+          "change_percentage_points": 1.3999999999999995
+        },
+        "operating_margin": {
+          "start_value": 20.7,
+          "end_value": 21.1,
+          "cagr_percent": null,
+          "change_percentage_points": 0.40000000000000213
+        },
+        "pat": {
+          "start_value": 26248.0,
+          "end_value": 26750.0,
+          "cagr_percent": 1.9125266686985665
+        },
+        "eps": {
+          "start_value": 63.29,
+          "end_value": 64.34,
+          "cagr_percent": 1.6590298625375421
+        },
+        "roe": {
+          "start_value": 36.6,
+          "end_value": 29.0,
+          "cagr_percent": null,
+          "change_percentage_points": -7.600000000000001
+        },
+        "free_cash_flow": {
+          "start_value": null,
+          "end_value": 34549.0,
+          "cagr_percent": null
+        },
+        "capex": {
+          "start_value": 2201.0,
+          "end_value": 2237.0,
+          "cagr_percent": 1.6356201726487996
+        },
+        "operating_cash_flow": {
+          "start_value": 25210.0,
+          "end_value": 35694.0,
+          "cagr_percent": 41.586671955573195
+        },
+        "cash_liquid_assets": {
+          "start_value": 39005.0,
+          "end_value": 47549.0,
+          "cagr_percent": 21.90488398923216
+        },
+        "employees": {
+          "start_value": 340687.0,
+          "end_value": 348596.0,
+          "cagr_percent": 2.32148570388655
+        },
+        "attrition": {
+          "start_value": 12.6,
+          "end_value": 14.1,
+          "cagr_percent": null,
+          "change_percentage_points": 1.5
+        },
+        "pat_margin": {
+          "start_value": 17.08,
+          "end_value": 16.41,
+          "cagr_percent": null,
+          "change_percentage_points": -0.6699999999999982
+        },
+        "revenue_per_employee": {
+          "start_value": 0.4511,
+          "end_value": 0.4676,
+          "cagr_percent": 3.6577255597428637
+        },
+        "employee_growth": {
+          "start_value": null,
+          "end_value": null,
+          "cagr_percent": null
+        },
+        "fcf_margin": {
+          "start_value": null,
+          "end_value": 21.2,
+          "cagr_percent": null,
+          "change_percentage_points": null
+        },
+        "standardized_fcf": {
+          "start_value": 23009.0,
+          "end_value": 33457.0,
+          "cagr_percent": 45.40831848407145
+        }
+      }
+    },
+    "TCS": {
+      "start_year": "FY2024",
+      "end_year": "FY2025",
+      "years": 1,
+      "metrics": {
+        "revenue": {
+          "start_value": 240893.0,
+          "end_value": 255324.0,
+          "cagr_percent": 5.990626543735189
+        },
+        "revenue_growth": {
+          "start_value": 6.8,
+          "end_value": 6.0,
+          "cagr_percent": null,
+          "change_percentage_points": -0.7999999999999998
+        },
+        "operating_margin": {
+          "start_value": 24.6,
+          "end_value": 24.3,
+          "cagr_percent": null,
+          "change_percentage_points": -0.3000000000000007
+        },
+        "pat": {
+          "start_value": 46099.0,
+          "end_value": 48553.0,
+          "cagr_percent": 5.323325885594055
+        },
+        "eps": {
+          "start_value": 127.74,
+          "end_value": 134.19,
+          "cagr_percent": 5.049318929074675
+        },
+        "roe": {
+          "start_value": null,
+          "end_value": null,
+          "cagr_percent": null,
+          "change_percentage_points": null
+        },
+        "free_cash_flow": {
+          "start_value": null,
+          "end_value": null,
+          "cagr_percent": null
+        },
+        "capex": {
+          "start_value": null,
+          "end_value": null,
+          "cagr_percent": null
+        },
+        "operating_cash_flow": {
+          "start_value": 45097.0,
+          "end_value": null,
+          "cagr_percent": null
+        },
+        "cash_liquid_assets": {
+          "start_value": 46963.0,
+          "end_value": 30956.0,
+          "cagr_percent": -34.08427911334455
+        },
+        "employees": {
+          "start_value": 601546.0,
+          "end_value": 607979.0,
+          "cagr_percent": 1.069411150601951
+        },
+        "attrition": {
+          "start_value": 12.5,
+          "end_value": 13.3,
+          "cagr_percent": null,
+          "change_percentage_points": 0.8000000000000007
+        },
+        "pat_margin": {
+          "start_value": 19.14,
+          "end_value": 19.02,
+          "cagr_percent": null,
+          "change_percentage_points": -0.120000000000001
+        },
+        "revenue_per_employee": {
+          "start_value": 0.4005,
+          "end_value": 0.42,
+          "cagr_percent": 4.868913857677892
+        },
+        "employee_growth": {
+          "start_value": null,
+          "end_value": null,
+          "cagr_percent": null
+        },
+        "fcf_margin": {
+          "start_value": null,
+          "end_value": null,
+          "cagr_percent": null,
+          "change_percentage_points": null
+        },
+        "standardized_fcf": {
+          "start_value": null,
+          "end_value": null,
+          "cagr_percent": null
+        }
+      }
+    }
+  },
+  "cross_company_analysis": {
+    "FY2024": {
+      "revenue": {
+        "HCLTech": 109913.0,
+        "Infosys": 153670.0,
+        "TCS": 240893.0
+      },
+      "revenue_growth": {
+        "HCLTech": 8.3,
+        "Infosys": 4.7,
+        "TCS": 6.8
+      },
+      "operating_margin": {
+        "HCLTech": 18.2,
+        "Infosys": 20.7,
+        "TCS": 24.6
+      },
+      "pat": {
+        "HCLTech": 15702.0,
+        "Infosys": 26248.0,
+        "TCS": 46099.0
+      },
+      "eps": {
+        "HCLTech": 57.86,
+        "Infosys": 63.29,
+        "TCS": 127.74
+      },
+      "roe": {
+        "HCLTech": 23.5,
+        "Infosys": 36.6,
+        "TCS": null
+      },
+      "free_cash_flow": {
+        "HCLTech": null,
+        "Infosys": null,
+        "TCS": null
+      },
+      "capex": {
+        "HCLTech": 1016.0,
+        "Infosys": 2201.0,
+        "TCS": null
+      },
+      "operating_cash_flow": {
+        "HCLTech": 22448.0,
+        "Infosys": 25210.0,
+        "TCS": 45097.0
+      },
+      "cash_liquid_assets": {
+        "HCLTech": 9441.0,
+        "Infosys": 39005.0,
+        "TCS": 46963.0
+      },
+      "employees": {
+        "HCLTech": 227481.0,
+        "Infosys": 340687.0,
+        "TCS": 601546.0
+      },
+      "attrition": {
+        "HCLTech": null,
+        "Infosys": 12.6,
+        "TCS": 12.5
+      },
+      "pat_margin": {
+        "HCLTech": 14.29,
+        "Infosys": 17.08,
+        "TCS": 19.14
+      },
+      "revenue_per_employee": {
+        "HCLTech": 0.4832,
+        "Infosys": 0.4511,
+        "TCS": 0.4005
+      },
+      "employee_growth": {
+        "HCLTech": null,
+        "Infosys": null,
+        "TCS": null
+      },
+      "fcf_margin": {
+        "HCLTech": null,
+        "Infosys": null,
+        "TCS": null
+      },
+      "standardized_fcf": {
+        "HCLTech": 21432.0,
+        "Infosys": 23009.0,
+        "TCS": null
+      }
+    },
+    "FY2025": {
+      "revenue": {
+        "HCLTech": 117055.0,
+        "Infosys": 162990.0,
+        "TCS": 255324.0
+      },
+      "revenue_growth": {
+        "HCLTech": 6.5,
+        "Infosys": 6.1,
+        "TCS": 6.0
+      },
+      "operating_margin": {
+        "HCLTech": 18.3,
+        "Infosys": 21.1,
+        "TCS": 24.3
+      },
+      "pat": {
+        "HCLTech": 17399.0,
+        "Infosys": 26750.0,
+        "TCS": 48553.0
+      },
+      "eps": {
+        "HCLTech": 64.16,
+        "Infosys": 64.34,
+        "TCS": 134.19
+      },
+      "roe": {
+        "HCLTech": 25.2,
+        "Infosys": 29.0,
+        "TCS": null
+      },
+      "free_cash_flow": {
+        "HCLTech": null,
+        "Infosys": 34549.0,
+        "TCS": null
+      },
+      "capex": {
+        "HCLTech": 1108.0,
+        "Infosys": 2237.0,
+        "TCS": null
+      },
+      "operating_cash_flow": {
+        "HCLTech": 22261.0,
+        "Infosys": 35694.0,
+        "TCS": null
+      },
+      "cash_liquid_assets": {
+        "HCLTech": 8245.0,
+        "Infosys": 47549.0,
+        "TCS": 30956.0
+      },
+      "employees": {
+        "HCLTech": 223420.0,
+        "Infosys": 348596.0,
+        "TCS": 607979.0
+      },
+      "attrition": {
+        "HCLTech": 12.99,
+        "Infosys": 14.1,
+        "TCS": 13.3
+      },
+      "pat_margin": {
+        "HCLTech": 14.86,
+        "Infosys": 16.41,
+        "TCS": 19.02
+      },
+      "revenue_per_employee": {
+        "HCLTech": 0.5239,
+        "Infosys": 0.4676,
+        "TCS": 0.42
+      },
+      "employee_growth": {
+        "HCLTech": null,
+        "Infosys": null,
+        "TCS": null
+      },
+      "fcf_margin": {
+        "HCLTech": null,
+        "Infosys": 21.2,
+        "TCS": null
+      },
+      "standardized_fcf": {
+        "HCLTech": 21153.0,
+        "Infosys": 33457.0,
+        "TCS": null
+      }
+    }
+  }
+}

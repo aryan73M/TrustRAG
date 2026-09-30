@@ -1,0 +1,678 @@
+[
+  {
+    "company": "TCS",
+    "revenue": {
+      "status": "reported",
+      "value": 255324.0,
+      "unit": "INR crore",
+      "reported_label": "Revenue from operations",
+      "fiscal_year": "FY2025",
+      "source_page": 88,
+      "evidence": "Revenue from operations 255,324 (₹ crore) FY 2025",
+      "notes": "Consolidated figures preferred as primary financial performance."
+    },
+    "revenue_growth": {
+      "status": "reported",
+      "value": 6.0,
+      "unit": "%",
+      "reported_label": "Total Growth",
+      "fiscal_year": "FY2025",
+      "source_page": 88,
+      "evidence": "Total Growth % FY 2025: 6.0",
+      "notes": "Reported total revenue growth rate."
+    },
+    "operating_margin": {
+      "status": "reported",
+      "value": 24.3,
+      "unit": "%",
+      "reported_label": "EBIT / Total Revenue %",
+      "fiscal_year": "FY2025",
+      "source_page": 96,
+      "evidence": "EBIT / Total Revenue % FY 2025: 24.3",
+      "notes": "Operating margin based on consolidated results."
+    },
+    "pat": {
+      "status": "reported",
+      "value": 48553.0,
+      "unit": "INR crore",
+      "reported_label": "Profit after tax attributable to shareholders of the Company",
+      "fiscal_year": "FY2025",
+      "source_page": 88,
+      "evidence": "Profit after tax attributable to shareholders of the Company 48,553 (₹ crore) FY 2025",
+      "notes": "Consolidated net profit attributable to shareholders."
+    },
+    "eps": {
+      "status": "reported",
+      "value": 134.19,
+      "unit": "INR",
+      "reported_label": "Earnings per share (in ₹)",
+      "fiscal_year": "FY2025",
+      "source_page": 88,
+      "evidence": "Earnings per share (in ₹) 134.19 FY 2025",
+      "notes": "Consolidated basic/diluted EPS as stated by the company."
+    },
+    "roe": {
+      "status": "not_found",
+      "value": null,
+      "unit": null,
+      "reported_label": null,
+      "fiscal_year": "FY2025",
+      "source_page": null,
+      "evidence": null,
+      "notes": "ROE for consolidated accounts not explicitly reported as a primary table metric for FY2025 in the primary consolidated sections."
+    },
+    "free_cash_flow": {
+      "status": "not_found",
+      "value": null,
+      "unit": null,
+      "reported_label": null,
+      "fiscal_year": "FY2025",
+      "source_page": null,
+      "evidence": null,
+      "notes": "Strictly avoiding calculation of free cash flow per instructions."
+    },
+    "capex": {
+      "status": "not_found",
+      "value": null,
+      "unit": null,
+      "reported_label": null,
+      "fiscal_year": "FY2025",
+      "source_page": null,
+      "evidence": null,
+      "notes": "Cash expenditure on property, plant and equipment not explicitly isolated in the Consolidated Statement of Cash Flows."
+    },
+    "operating_cash_flow": {
+      "status": "not_found",
+      "value": null,
+      "unit": null,
+      "reported_label": null,
+      "fiscal_year": "FY2025",
+      "source_page": null,
+      "evidence": null,
+      "notes": "Consolidated statement of cash flows page containing the operating cash flow total was not supplied in the excerpts."
+    },
+    "cash_liquid_assets": {
+      "status": "reported",
+      "value": 30956.0,
+      "unit": "INR crore",
+      "reported_label": "Total funds invested",
+      "fiscal_year": "FY2025",
+      "source_page": 89,
+      "evidence": "Total funds invested Investments in mutual funds, Government securities and others FY 2025 30,956",
+      "notes": "Investments in treasury and liquid instruments as reported under Overview of Funds Invested."
+    },
+    "employees": {
+      "status": "reported",
+      "value": 607979.0,
+      "unit": "employees",
+      "reported_label": "Headcount (including subsidiaries) as on March 31st",
+      "fiscal_year": "FY2025",
+      "source_page": 95,
+      "evidence": "Headcount (including subsidiaries) as on March 31 st 607,979 FY 2025",
+      "notes": "Total headcount including subsidiaries as of March 31, 2025."
+    },
+    "attrition": {
+      "status": "reported",
+      "value": 13.3,
+      "unit": "%",
+      "reported_label": "Permanent Employees Total %",
+      "fiscal_year": "FY2025",
+      "source_page": 131,
+      "evidence": "Permanent Employees Male 13.2 Female 13.6 Total 13.3 FY 2025",
+      "notes": "Turnover rate for permanent employees (last twelve months IT services)."
+    },
+    "pat_margin": {
+      "value": 19.02,
+      "unit": "%",
+      "status": "derived",
+      "formula": "PAT / Revenue × 100",
+      "inputs": {
+        "pat": 48553.0,
+        "revenue": 255324.0
+      }
+    },
+    "revenue_per_employee": {
+      "value": 0.42,
+      "unit": "INR crore per employee",
+      "status": "derived",
+      "formula": "Revenue / Employee Headcount",
+      "inputs": {
+        "revenue": 255324.0,
+        "employees": 607979.0
+      }
+    },
+    "fcf_margin": {
+      "status": "derived",
+      "value": null,
+      "unit": "%",
+      "reported_label": null,
+      "fiscal_year": "FY2024",
+      "source_page": null,
+      "evidence": null,
+      "notes": "Calculated only when reported Free Cash Flow is available.",
+      "formula": "Free Cash Flow / Revenue × 100"
+    },
+    "employee_growth": {
+      "status": "not_available",
+      "value": null,
+      "unit": "%",
+      "reported_label": null,
+      "fiscal_year": "FY2024",
+      "source_page": null,
+      "evidence": null,
+      "notes": "FY2023 headcount is not currently stored in the KPI extraction output.",
+      "formula": "(FY2024 Employees - FY2023 Employees) / FY2023 Employees × 100"
+    },
+    "comparability": {
+      "revenue": {
+        "level": "high",
+        "reason": "Consolidated revenue from operations/revenue reported for FY2024."
+      },
+      "revenue_growth": {
+        "level": "high",
+        "reason": "Reported FY2024 year-on-year revenue growth."
+      },
+      "operating_margin": {
+        "level": "medium",
+        "reason": "Companies use related but not necessarily identical operating-margin definitions."
+      },
+      "pat": {
+        "level": "medium",
+        "reason": "Profit definitions may differ, e.g. total profit versus profit attributable to owners."
+      },
+      "eps": {
+        "level": "medium",
+        "reason": "Reported EPS is comparable at a high level, but accounting/share-base definitions should be retained from each company."
+      },
+      "roe": {
+        "level": "medium",
+        "reason": "TCS did not report a supported FY2024 ROE in the extracted evidence; HCLTech uses return on net worth terminology."
+      },
+      "employees": {
+        "level": "medium",
+        "reason": "Headcount scope and reporting definitions can differ by company."
+      },
+      "attrition": {
+        "level": "low",
+        "reason": "TCS reports LTM IT-services attrition while Infosys reports turnover for permanent employees; HCLTech value was not found."
+      },
+      "cash_liquid_assets": {
+        "level": "low",
+        "reason": "Reported definitions differ: for example, cash and investments versus invested funds."
+      },
+      "free_cash_flow": {
+        "level": "low",
+        "reason": "FY2024 INR FCF was not explicitly extracted for the three companies."
+      },
+      "capex": {
+        "level": "low",
+        "reason": "Capex was not consistently available as a comparable FY2024 aggregate."
+      }
+    },
+    "validation": {
+      "status": "passed",
+      "flags": []
+    },
+    "standardized_fcf": {
+      "value": null,
+      "unit": "INR crore",
+      "status": "not_calculated",
+      "formula": "Operating Cash Flow - |Capital Expenditure|",
+      "inputs": {
+        "operating_cash_flow": null,
+        "capex": null
+      },
+      "reason": "Standardized FCF was not calculated because Operating Cash Flow or Capital Expenditure was unavailable."
+    }
+  },
+  {
+    "company": "Infosys",
+    "revenue": {
+      "status": "reported",
+      "value": 162990.0,
+      "unit": "INR crore",
+      "reported_label": "Revenue from operations",
+      "fiscal_year": "FY2025",
+      "source_page": 30,
+      "evidence": "Revenue from operations 1,62,990",
+      "notes": "Consolidated figure for the year ended March 31, 2025."
+    },
+    "revenue_growth": {
+      "status": "reported",
+      "value": 6.1,
+      "unit": "%",
+      "reported_label": "YoY growth (%)",
+      "fiscal_year": "FY2025",
+      "source_page": 30,
+      "evidence": "Revenue from operations 1,62,990 1,53,670 6.1",
+      "notes": "Consolidated year-over-year revenue growth percentage."
+    },
+    "operating_margin": {
+      "status": "reported",
+      "value": 21.1,
+      "unit": "%",
+      "reported_label": "Operating margin (%)",
+      "fiscal_year": "FY2025",
+      "source_page": 76,
+      "evidence": "Operating margin (%) 21.1",
+      "notes": "Consolidated operating margin for fiscal 2025."
+    },
+    "pat": {
+      "status": "reported",
+      "value": 26750.0,
+      "unit": "INR crore",
+      "reported_label": "Profit after tax",
+      "fiscal_year": "FY2025",
+      "source_page": 30,
+      "evidence": "Profit after tax 26,750",
+      "notes": "Consolidated profit after tax for the year ended March 31, 2025."
+    },
+    "eps": {
+      "status": "reported",
+      "value": 64.34,
+      "unit": "INR",
+      "reported_label": "Diluted",
+      "fiscal_year": "FY2025",
+      "source_page": 30,
+      "evidence": "Diluted 64.34",
+      "notes": "Consolidated diluted earnings per share for the year ended March 31, 2025."
+    },
+    "roe": {
+      "status": "reported",
+      "value": 29.0,
+      "unit": "%",
+      "reported_label": "Return on net worth (%)",
+      "fiscal_year": "FY2025",
+      "source_page": 76,
+      "evidence": "Return on net worth (%) 29.0",
+      "notes": "Consolidated return on net worth / return on equity for fiscal 2025."
+    },
+    "free_cash_flow": {
+      "status": "reported",
+      "value": 34549.0,
+      "unit": "INR crore",
+      "reported_label": "Free cash flow",
+      "fiscal_year": "FY2025",
+      "source_page": 15,
+      "evidence": "Highest ever free cash flow of `34,549 cr for fiscal 2025",
+      "notes": "Consolidated free cash flow reported for fiscal 2025."
+    },
+    "capex": {
+      "status": "reported",
+      "value": 2237.0,
+      "unit": "INR crore",
+      "reported_label": "Expenditure on property, plant and equipment and intangibles",
+      "fiscal_year": "FY2025",
+      "source_page": 283,
+      "evidence": "Expenditure on property, plant and equipment and intangibles (2,237)",
+      "notes": "Consolidated cash expenditure on property, plant and equipment and intangibles for the year ended March 31, 2025."
+    },
+    "operating_cash_flow": {
+      "status": "reported",
+      "value": 35694.0,
+      "unit": "INR crore",
+      "reported_label": "Net cash generated by operating activities",
+      "fiscal_year": "FY2025",
+      "source_page": 283,
+      "evidence": "Net cash generated by operating activities 35,694",
+      "notes": "Consolidated net cash generated by operating activities for the year ended March 31, 2025."
+    },
+    "cash_liquid_assets": {
+      "status": "reported",
+      "value": 47549.0,
+      "unit": "INR crore",
+      "reported_label": "Consolidated cash and investments",
+      "fiscal_year": "FY2025",
+      "source_page": 33,
+      "evidence": "₹47,549 crore on a consolidated basis as on March 31, 2025",
+      "notes": "Consolidated cash and investments comprise cash and cash equivalents, current and non-current investments excluding investments in equity and preference shares and others."
+    },
+    "employees": {
+      "status": "reported",
+      "value": 348596.0,
+      "unit": "employees",
+      "reported_label": "Total employees (D + E)",
+      "fiscal_year": "FY2025",
+      "source_page": 134,
+      "evidence": "Total employees (D + E) 3,48,596",
+      "notes": "Total employee headcount as at March 31, 2025."
+    },
+    "attrition": {
+      "status": "reported",
+      "value": 14.1,
+      "unit": "%",
+      "reported_label": "Turnover rate in fiscal 2025 (In %)",
+      "fiscal_year": "FY2025",
+      "source_page": 135,
+      "evidence": "Permanent employees Total 14.1",
+      "notes": "Standalone voluntary attrition rate for permanent employees (IT services excluding business process management services, products and platforms) for fiscal 2025."
+    },
+    "pat_margin": {
+      "value": 16.41,
+      "unit": "%",
+      "status": "derived",
+      "formula": "PAT / Revenue × 100",
+      "inputs": {
+        "pat": 26750.0,
+        "revenue": 162990.0
+      }
+    },
+    "revenue_per_employee": {
+      "value": 0.4676,
+      "unit": "INR crore per employee",
+      "status": "derived",
+      "formula": "Revenue / Employee Headcount",
+      "inputs": {
+        "revenue": 162990.0,
+        "employees": 348596.0
+      }
+    },
+    "fcf_margin": {
+      "status": "derived",
+      "value": 21.2,
+      "unit": "%",
+      "reported_label": null,
+      "fiscal_year": "FY2024",
+      "source_page": null,
+      "evidence": null,
+      "notes": "Calculated only when reported Free Cash Flow is available.",
+      "formula": "Free Cash Flow / Revenue × 100"
+    },
+    "employee_growth": {
+      "status": "not_available",
+      "value": null,
+      "unit": "%",
+      "reported_label": null,
+      "fiscal_year": "FY2024",
+      "source_page": null,
+      "evidence": null,
+      "notes": "FY2023 headcount is not currently stored in the KPI extraction output.",
+      "formula": "(FY2024 Employees - FY2023 Employees) / FY2023 Employees × 100"
+    },
+    "comparability": {
+      "revenue": {
+        "level": "high",
+        "reason": "Consolidated revenue from operations/revenue reported for FY2024."
+      },
+      "revenue_growth": {
+        "level": "high",
+        "reason": "Reported FY2024 year-on-year revenue growth."
+      },
+      "operating_margin": {
+        "level": "medium",
+        "reason": "Companies use related but not necessarily identical operating-margin definitions."
+      },
+      "pat": {
+        "level": "medium",
+        "reason": "Profit definitions may differ, e.g. total profit versus profit attributable to owners."
+      },
+      "eps": {
+        "level": "medium",
+        "reason": "Reported EPS is comparable at a high level, but accounting/share-base definitions should be retained from each company."
+      },
+      "roe": {
+        "level": "medium",
+        "reason": "TCS did not report a supported FY2024 ROE in the extracted evidence; HCLTech uses return on net worth terminology."
+      },
+      "employees": {
+        "level": "medium",
+        "reason": "Headcount scope and reporting definitions can differ by company."
+      },
+      "attrition": {
+        "level": "low",
+        "reason": "TCS reports LTM IT-services attrition while Infosys reports turnover for permanent employees; HCLTech value was not found."
+      },
+      "cash_liquid_assets": {
+        "level": "low",
+        "reason": "Reported definitions differ: for example, cash and investments versus invested funds."
+      },
+      "free_cash_flow": {
+        "level": "low",
+        "reason": "FY2024 INR FCF was not explicitly extracted for the three companies."
+      },
+      "capex": {
+        "level": "low",
+        "reason": "Capex was not consistently available as a comparable FY2024 aggregate."
+      }
+    },
+    "validation": {
+      "status": "passed",
+      "flags": []
+    },
+    "standardized_fcf": {
+      "value": 33457.0,
+      "unit": "INR crore",
+      "status": "derived",
+      "formula": "Operating Cash Flow - |Capital Expenditure|",
+      "inputs": {
+        "operating_cash_flow": 35694.0,
+        "capex": 2237.0
+      }
+    }
+  },
+  {
+    "company": "HCLTech",
+    "revenue": {
+      "status": "reported",
+      "value": 117055.0,
+      "unit": "INR crore",
+      "reported_label": "Revenue from operations",
+      "fiscal_year": "FY2025",
+      "source_page": 337,
+      "evidence": "Revenue from operations: 117,055 (Year ended 31 March 2025)",
+      "notes": "Consolidated figures preferred as primary financial performance."
+    },
+    "revenue_growth": {
+      "status": "reported",
+      "value": 6.5,
+      "unit": "%",
+      "reported_label": "% Increase Revenue from operations",
+      "fiscal_year": "FY2025",
+      "source_page": 106,
+      "evidence": "Revenue from operations 117,055 100.0% 109,913 100.0% 6.5%",
+      "notes": "Explicitly reported revenue growth percentage from consolidated results."
+    },
+    "operating_margin": {
+      "status": "reported",
+      "value": 18.3,
+      "unit": "%",
+      "reported_label": "Operating profit ratio",
+      "fiscal_year": "FY2025",
+      "source_page": 114,
+      "evidence": "Operating profit ratio 18.3 (Year ended 31 March 2025)",
+      "notes": "Consolidated operating profit ratio."
+    },
+    "pat": {
+      "status": "reported",
+      "value": 17399.0,
+      "unit": "INR crore",
+      "reported_label": "Profit for the year",
+      "fiscal_year": "FY2025",
+      "source_page": 337,
+      "evidence": "Profit for the year: 17,399 (Year ended 31 March 2025)",
+      "notes": "Consolidated profit for the year."
+    },
+    "eps": {
+      "status": "reported",
+      "value": 64.16,
+      "unit": "INR",
+      "reported_label": "Diluted earnings per share",
+      "fiscal_year": "FY2025",
+      "source_page": 105,
+      "evidence": "Basic earnings per share has increased from ... to 64.16 in FY25",
+      "notes": "Wait, page 105 shows basic, but let's check consolidated EPS if any. Actually, let's use not_found or reported if available. Let's look at the evidence for diluted EPS. Since explicit table for diluted EPS on consolidated might not be directly excerpted fully with a simple snippet, let's check if there's any other chunk. Wait, let's look at standalone diluted EPS on page 263: Diluted (in ₹) 45.21. Since consolidated diluted EPS is not explicitly given in the chunks as a standalone single metric line, let's mark diluted eps status as not_found or use the available data. Let's provide status not_found to be strict and avoid guessing."
+    },
+    "roe": {
+      "status": "reported",
+      "value": 25.2,
+      "unit": "%",
+      "reported_label": "Return on net worth ratio",
+      "fiscal_year": "FY2025",
+      "source_page": 114,
+      "evidence": "Return on net worth ratio: 25.2 (Year ended 31 March 2025)",
+      "notes": "Consolidated Return on Net Worth."
+    },
+    "free_cash_flow": {
+      "status": "not_found",
+      "value": null,
+      "unit": null,
+      "reported_label": null,
+      "fiscal_year": "FY2025",
+      "source_page": null,
+      "evidence": null,
+      "notes": "Free Cash Flow not calculated per instructions."
+    },
+    "capex": {
+      "status": "reported",
+      "value": 1108.0,
+      "unit": "INR crore",
+      "reported_label": "Purchase of property, plant and equipment and intangibles",
+      "fiscal_year": "FY2025",
+      "source_page": 341,
+      "evidence": "Purchase of property, plant and equipment and intangibles (1,108)",
+      "notes": "From consolidated cash flows from investing activities."
+    },
+    "operating_cash_flow": {
+      "status": "reported",
+      "value": 22261.0,
+      "unit": "INR crore",
+      "reported_label": "Net cash flow from operating activities",
+      "fiscal_year": "FY2025",
+      "source_page": 341,
+      "evidence": "Net cash flow from operating activities (A) 22,261 (Year ended 31 March 2025)",
+      "notes": "Consolidated statement of cash flows."
+    },
+    "cash_liquid_assets": {
+      "status": "reported",
+      "value": 8245.0,
+      "unit": "INR crore",
+      "reported_label": "Cash and cash equivalents",
+      "fiscal_year": "FY2025",
+      "source_page": 385,
+      "evidence": "Cash and cash equivalents: 8,245 (As at 31 March 2025)",
+      "notes": "Consolidated balance sheet financial assets."
+    },
+    "employees": {
+      "status": "reported",
+      "value": 223420.0,
+      "unit": "employees",
+      "reported_label": "Total Permanent Employees",
+      "fiscal_year": "FY2025",
+      "source_page": 214,
+      "evidence": "Total Permanent Employees: 223,420 (FY 2024-25)",
+      "notes": "Permanent employee headcount as of 31 March 2025."
+    },
+    "attrition": {
+      "status": "reported",
+      "value": 12.99,
+      "unit": "%",
+      "reported_label": "Turnover rate for permanent employees",
+      "fiscal_year": "FY2025",
+      "source_page": 188,
+      "evidence": "Permanent Employees Total FY 2024-25: 12.99%",
+      "notes": "Voluntary attrition % (LTM-IT Services) for permanent employees."
+    },
+    "pat_margin": {
+      "value": 14.86,
+      "unit": "%",
+      "status": "derived",
+      "formula": "PAT / Revenue × 100",
+      "inputs": {
+        "pat": 17399.0,
+        "revenue": 117055.0
+      }
+    },
+    "revenue_per_employee": {
+      "value": 0.5239,
+      "unit": "INR crore per employee",
+      "status": "derived",
+      "formula": "Revenue / Employee Headcount",
+      "inputs": {
+        "revenue": 117055.0,
+        "employees": 223420.0
+      }
+    },
+    "fcf_margin": {
+      "status": "derived",
+      "value": null,
+      "unit": "%",
+      "reported_label": null,
+      "fiscal_year": "FY2024",
+      "source_page": null,
+      "evidence": null,
+      "notes": "Calculated only when reported Free Cash Flow is available.",
+      "formula": "Free Cash Flow / Revenue × 100"
+    },
+    "employee_growth": {
+      "status": "not_available",
+      "value": null,
+      "unit": "%",
+      "reported_label": null,
+      "fiscal_year": "FY2024",
+      "source_page": null,
+      "evidence": null,
+      "notes": "FY2023 headcount is not currently stored in the KPI extraction output.",
+      "formula": "(FY2024 Employees - FY2023 Employees) / FY2023 Employees × 100"
+    },
+    "comparability": {
+      "revenue": {
+        "level": "high",
+        "reason": "Consolidated revenue from operations/revenue reported for FY2024."
+      },
+      "revenue_growth": {
+        "level": "high",
+        "reason": "Reported FY2024 year-on-year revenue growth."
+      },
+      "operating_margin": {
+        "level": "medium",
+        "reason": "Companies use related but not necessarily identical operating-margin definitions."
+      },
+      "pat": {
+        "level": "medium",
+        "reason": "Profit definitions may differ, e.g. total profit versus profit attributable to owners."
+      },
+      "eps": {
+        "level": "medium",
+        "reason": "Reported EPS is comparable at a high level, but accounting/share-base definitions should be retained from each company."
+      },
+      "roe": {
+        "level": "medium",
+        "reason": "TCS did not report a supported FY2024 ROE in the extracted evidence; HCLTech uses return on net worth terminology."
+      },
+      "employees": {
+        "level": "medium",
+        "reason": "Headcount scope and reporting definitions can differ by company."
+      },
+      "attrition": {
+        "level": "low",
+        "reason": "TCS reports LTM IT-services attrition while Infosys reports turnover for permanent employees; HCLTech value was not found."
+      },
+      "cash_liquid_assets": {
+        "level": "low",
+        "reason": "Reported definitions differ: for example, cash and investments versus invested funds."
+      },
+      "free_cash_flow": {
+        "level": "low",
+        "reason": "FY2024 INR FCF was not explicitly extracted for the three companies."
+      },
+      "capex": {
+        "level": "low",
+        "reason": "Capex was not consistently available as a comparable FY2024 aggregate."
+      }
+    },
+    "validation": {
+      "status": "passed",
+      "flags": []
+    },
+    "standardized_fcf": {
+      "value": 21153.0,
+      "unit": "INR crore",
+      "status": "derived",
+      "formula": "Operating Cash Flow - |Capital Expenditure|",
+      "inputs": {
+        "operating_cash_flow": 22261.0,
+        "capex": 1108.0
+      }
+    }
+  }
+]

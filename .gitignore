@@ -1,8 +1,4 @@
 .env
-data/
-chroma_db/
-
-.env
 .env.*
 !.env.example
 
@@ -11,8 +7,26 @@ venv/
 __pycache__/
 *.pyc
 
-.streamlit/secrets.toml
+.chroma_db/
+chroma_db/
 
+evals/
+src/*_backup.py
+
+# Ignore everything inside data by default
+data/*
+
+# Keep the processed dashboard data required by Streamlit
+!data/calculated_kpis.json
+!data/calculated_kpis_FY2025.json
+!data/qualitative_analysis.json
+!data/quantitative_analysis.json
+!data/TrustRAG_Benchmarking_Report.xlsx
+
+# Keep source PDFs and large RAG chunks out of GitHub
 *.pdf
+data/chunks_v2.json
+
 uploads/
 temp/
+.streamlit/secrets.toml

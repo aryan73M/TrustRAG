@@ -1,0 +1,438 @@
+{
+  "metadata": {
+    "description": "TrustRAG qualitative intelligence extracted from annual reports",
+    "companies": [
+      "TCS",
+      "Infosys",
+      "HCLTech"
+    ],
+    "fiscal_years": [
+      "FY2024",
+      "FY2025"
+    ],
+    "categories": {
+      "strategic_changes": "Strategic / Business Changes",
+      "management_changes": "Management / Leadership Changes",
+      "sustainability_esg": "Sustainability / ESG",
+      "workforce_developments": "Workforce / Organizational Developments"
+    }
+  },
+  "company_year_analysis": [
+    {
+      "company": "TCS",
+      "fiscal_year": "FY2024",
+      "source_documents": [
+        "tcs_fy24.pdf"
+      ],
+      "evidence_chunks_used": 41,
+      "strategic_changes": [
+        {
+          "finding": "Established a dedicated service unit, AI.Cloud, to integrate cloud and AI capabilities for customer transformations.",
+          "source_page": 81,
+          "evidence": "Dedicated service unit AI.Cloud set up bringing both cloud and AI capabilities together to drive transformations for the customer under a ‘Responsible AI’ framework providing solutions on leading hyperscaler platforms."
+        },
+        {
+          "finding": "Shifted focus toward cost optimization and cloud transformation as primary engagement themes due to customer reprioritization of projects.",
+          "source_page": 9,
+          "evidence": "Hence, the key engagement themes we saw during the year were around cost optimization and cloud transformation."
+        },
+        {
+          "finding": "Implemented a strategy to disrupt conventional labor arbitrage-based constructs through platform-based business models and AI-based operating models.",
+          "source_page": 81,
+          "evidence": "Platform-based business models and AI-based operating models to disrupt conventional labor arbitrage-based constructs, and gain market share."
+        }
+      ],
+      "management_changes": [
+        {
+          "finding": "K Krithivasan was appointed as CEO & MD effective June 1, 2023, succeeding Rajesh Gopinathan.",
+          "source_page": 98,
+          "evidence": "*appointed as CEO & MD w.e.f. June 1, 2023 **ceased to be CEO & MD w.e.f. June 1, 2023"
+        },
+        {
+          "finding": "S Sukanya was appointed as Chief Information Officer on October 11, 2023, and ceased the role on March 5, 2024.",
+          "source_page": 104,
+          "evidence": "S Sukanya, was appointed as Chief Information Officer on October 11, 2023, and ceased on March 5, 2024."
+        },
+        {
+          "finding": "Al-Noor Ramji was appointed as an Independent Director effective October 12, 2023.",
+          "source_page": 98,
+          "evidence": "^^appointed as Independent Director w.e.f. October 12, 2023"
+        },
+        {
+          "finding": "Don Callahan ceased to be an Independent Director effective January 10, 2024.",
+          "source_page": 98,
+          "evidence": "^^^ceased to be Director w.e.f. January 10, 2024 upon completion of his term as Independent Director."
+        }
+      ],
+      "sustainability_esg": [
+        {
+          "finding": "Achieved an 80% reduction in absolute Scope 1 and Scope 2 greenhouse gas emissions in FY 2024 compared to the 2016 baseline, exceeding the 70% target one year ahead of schedule.",
+          "source_page": 24,
+          "evidence": "We have reduced our absolute carbon footprint across Scope 1 and Scope 2 by 80% in FY 2024 over a baseline of 2016, exceeding our target achievement by 10%, one year ahead of time"
+        },
+        {
+          "finding": "The Stakeholders’ Relationship Committee (SRC) of the Board was designated as the body responsible for decision-making on sustainability-related issues.",
+          "source_page": 132,
+          "evidence": "The Stakeholders’ Relationship Committee (SRC) of the Board is responsible for decision making on sustainability related issues."
+        },
+        {
+          "finding": "Increased green-certified office space to 67.3% of total built-up area in FY 2024.",
+          "source_page": 152,
+          "evidence": "The % green certified area over built up area was 64.6% in FY 2022-23 and has increased to 67.3% this year."
+        }
+      ],
+      "workforce_developments": [
+        {
+          "finding": "Launched the #IamGenAIReady program with the goal of making every employee GenAI-ready by 2025.",
+          "source_page": 73,
+          "evidence": "#IamGenAIReady – Intense focus on building GenAI capabilities with a goal to make “Every TCSer GenAI ready by 2025”."
+        },
+        {
+          "finding": "Prioritized a Return to Office (RTO) policy, with approximately 55% of employees working from the office on all working days.",
+          "source_page": 74,
+          "evidence": "Return to Office (RTO) is a key priority... TCS has approximately 55% of its employees working from the office on all working days of the week."
+        },
+        {
+          "finding": "Expanded the Policy on Flexible Work Arrangements to support primary caregivers of young children post-childbirth or adoption.",
+          "source_page": 74,
+          "evidence": "Policy on Flexible Work Arrangements extended the scope of the existing policy to provide necessary support and flexibility to all employees (inclusive of fathers/non-birthing parents) who are primary caregivers of young children, post childbirth or adoption of a child."
+        }
+      ]
+    },
+    {
+      "company": "TCS",
+      "fiscal_year": "FY2025",
+      "source_documents": [
+        "tcs_fy25.pdf"
+      ],
+      "evidence_chunks_used": 39,
+      "strategic_changes": [
+        {
+          "finding": "TCS is shifting toward an 'AI-First' approach, integrating Generative AI across its offerings and developing intelligent agent solutions.",
+          "source_page": 10,
+          "evidence": "TCS is proactively leading this change. We have systematically infused AI across our offerings and built intelligent agent solutions throughout the value chain."
+        },
+        {
+          "finding": "The company is transitioning to 'Service-as-a-Software' models and exploring new segments including Digital Public Goods, Autonomous Vehicles, and Space Tech.",
+          "source_page": 82,
+          "evidence": "Invest in AI/GenAI by establishing Centres of Excellence, developing industry-specific solutions, and pioneering Service-as-a-Software offerings. Venture into and explore new segments and products such as Digital Public Goods, Autonomous Vehicles, Mobility as a Service, Health and Wellness."
+        },
+        {
+          "finding": "TCS is shifting toward outcome and value-based engagement models to create greater business impact.",
+          "source_page": 84,
+          "evidence": "Transition to outcome and value-based engagement models, offering quantified value delivery and risk-adjusted commercial structures to create greater business impact."
+        }
+      ],
+      "management_changes": [
+        {
+          "finding": "Aarthi Subramanian was appointed as Executive Director - President and Chief Operating Officer, effective May 1, 2025.",
+          "source_page": 43,
+          "evidence": "appointment of Aarthi Subramanian (DIN 07121802) as a Whole-time Director designated as 'Executive Director - President and Chief Operating Officer' of the Company for a period of five years commencing from May 1, 2025 to April 30, 2030"
+        },
+        {
+          "finding": "N.G. Subramaniam ceased to be Chief Operating Officer and Executive Director effective May 20, 2024, due to the company's retirement age policy.",
+          "source_page": 71,
+          "evidence": "N G Subramaniam (DIN 07006215) ceased to be the Chief Operating Officer and Executive Director ('COO & ED') of the Company w.e.f. May 20, 2024, as per the retirement age policy of the Company"
+        },
+        {
+          "finding": "Yashaswin Sheth was appointed as Company Secretary and Compliance Officer effective November 1, 2024, following the superannuation of Pradeep Manohar Gaitonde.",
+          "source_page": 71,
+          "evidence": "Yashaswin Sheth was appointed as the Company Secretary and Compliance Officer w.e.f. November 1, 2024, upon the superannuation of Pradeep Manohar Gaitonde w.e.f. October 31, 2024."
+        }
+      ],
+      "sustainability_esg": [
+        {
+          "finding": "TCS committed to Science Based Targets (SBTi) to reduce absolute Scope 1 and 2 GHG emissions by 90% by FY 2030 (from FY 2016 base) and Scope 3 emissions by 35% by FY 2034 (from FY 2020 base).",
+          "source_page": 154,
+          "evidence": "TCS commits to reduce absolute scope 1 and 2 GHG emissions 90% by FY 2030 from a FY 2016 base year. TCS also commits to reduce absolute scope 3 emissions 35% by FY 2034 from a FY 2020 base year."
+        },
+        {
+          "finding": "Renewable electricity consumption as a percentage of total energy consumption increased from 74% in FY 2024 to 79% in FY 2025.",
+          "source_page": 151,
+          "evidence": "The renewable energy consumption as a percentage of total energy consumption has increased from 74% in FY 2024 to 79% in FY 2025."
+        }
+      ],
+      "workforce_developments": [
+        {
+          "finding": "TCS hired 42,000 freshers in FY 2025 and achieved an IT services attrition rate of 13.3%.",
+          "source_page": 24,
+          "evidence": "42,000 freshers; 13.3% LTM attrition in IT services"
+        },
+        {
+          "finding": "The company rolled out GenAI-powered tools including Interview Coach, Coding Tutors, and AI Communications Coach to enhance talent development.",
+          "source_page": 25,
+          "evidence": "GenAI-powered tools like Interview Coach, Coding Tutors, Simulators, Content Creators, and AI communications coach have been rolled out to improve experience and efficiency in Talent Development."
+        },
+        {
+          "finding": "TCS recognized over 110,000 promotions in FY 2025.",
+          "source_page": 84,
+          "evidence": "TCS continues to drive a high-performance culture, recognizing and rewarding potential talent with over 110,000 promotions in FY 2025."
+        }
+      ]
+    },
+    {
+      "company": "Infosys",
+      "fiscal_year": "FY2024",
+      "source_documents": [
+        "infosys_fy24.pdf"
+      ],
+      "evidence_chunks_used": 39,
+      "strategic_changes": [
+        {
+          "finding": "Reimagined the organization as an AI-first company, integrating generative AI across services and platforms.",
+          "source_page": 20,
+          "evidence": "We have reimagined ourselves to be an AI-first organization. Our digital transformation is today enhanced with AI."
+        },
+        {
+          "finding": "Continued investment in proprietary AI-first and cloud-focused platforms, specifically Infosys Topaz and Infosys Cobalt.",
+          "source_page": 69,
+          "evidence": "We have continued to invest in Infosys Cobalt™ – a set of services, solutions and platforms for enterprises to accelerate their cloud journey and Infosys Topaz – a set of AI-first services, solutions and platforms using generative AI technology."
+        }
+      ],
+      "management_changes": [
+        {
+          "finding": "Appointment of Jayesh Sanghrajka as Chief Financial Officer effective April 01, 2024.",
+          "source_page": 105,
+          "evidence": "Changes during fiscal 2024 Senior Management Personnel Effective date Appointments Jayesh Sanghrajka April 01, 2024"
+        },
+        {
+          "finding": "Resignation of Nilanjan Roy as Chief Financial Officer effective March 31, 2024.",
+          "source_page": 105,
+          "evidence": "Changes during fiscal 2024 Senior Management Personnel Effective date Resignations Nilanjan Roy March 31, 2024"
+        },
+        {
+          "finding": "Appointment of Helene Auriol Potier as Independent Director effective May 26, 2023.",
+          "source_page": 37,
+          "evidence": "The shareholders, at the 42nd AGM held on June 28, 2023, approved the following: a. Appointment of Helene Auriol Potier as Independent Director effective May 26, 2023"
+        }
+      ],
+      "sustainability_esg": [
+        {
+          "finding": "Maintained carbon neutrality across Scope 1, 2, and 3 emissions for the fifth consecutive year.",
+          "source_page": 78,
+          "evidence": "We continue to be carbon neutral across Scope 1, 2 and 3 emissions for the fifth year in a row."
+        },
+        {
+          "finding": "Achieved 67.52% renewable energy usage for India operations.",
+          "source_page": 25,
+          "evidence": "We get 67.52% of electricity for our India operations from renewable sources."
+        },
+        {
+          "finding": "Published 'Pioneering Net Zero Buildings – The Infosys Journey' in September 2023 to share methodologies for sustainable building design.",
+          "source_page": 65,
+          "evidence": "In September 2023, Infosys published the book “Pioneering Net Zero Buildings – The Infosys Journey,” which chronicles our efforts in constructing super-efficient buildings and thus minimizing environmental impact."
+        }
+      ],
+      "workforce_developments": [
+        {
+          "finding": "Launched a global digital reskilling program focused on generative AI, resulting in over 250,000 AI-aware employees.",
+          "source_page": 20,
+          "evidence": "our digital reskilling program globally to encompass the latest courses on generative AI. Over 2,50,000 of our employees today are AI-aware."
+        },
+        {
+          "finding": "Recruited 90% of employees locally in international markets during fiscal 2024.",
+          "source_page": 23,
+          "evidence": "In fiscal 2024, we recruited 90% employees locally in our markets."
+        },
+        {
+          "finding": "Implemented 'Pulse', a reimagined real-time feedback mechanism for the hybrid work model, with over 160,000 participants in fiscal 2024.",
+          "source_page": 23,
+          "evidence": "Our reimagined listening mechanism for the new remote way of work is a periodic feedback mechanism called Pulse. Over 1.60L+ employees participated in fiscal 2024."
+        }
+      ]
+    },
+    {
+      "company": "Infosys",
+      "fiscal_year": "FY2025",
+      "source_documents": [
+        "infosys_fy25.pdf"
+      ],
+      "evidence_chunks_used": 39,
+      "strategic_changes": [
+        {
+          "finding": "Launched the 'ASSURE' (Accelerating Sustainable and Super-efficient Real Estate) initiative in partnership with the Indian Institute for Human Settlements to accelerate decarbonization in the Indian building sector.",
+          "source_page": 66,
+          "evidence": "In an effort to replicate the success of high-efficiency building design and operations on a larger scale, Infosys launched a unique initiative ‘ASSURE’ (Accelerating Sustainable and Super- efficient Real Estate) in partnership with the Indian Institute for Human Settlements."
+        },
+        {
+          "finding": "Developed the 'Infosys Agentic Foundry' to build and deploy AI agents across various industries.",
+          "source_page": 21,
+          "evidence": "Through our Infosys Agentic Foundry, we have developed hundreds of agents across various industries. Multiple agentic projects went live, showing strong Returns on Investments in terms of cost as well as business benefits."
+        }
+      ],
+      "management_changes": [
+        {
+          "finding": "Jayesh Sanghrajka appointed as Chief Financial Officer and Key Managerial Personnel, effective April 1, 2024.",
+          "source_page": 38,
+          "evidence": "The Board, at its meeting held on December 11, 2023, appointed Jayesh Sanghrajka as the Chief Financial Officer and KMP of the Company effective April 1, 2024."
+        },
+        {
+          "finding": "Resignation of Hemant Lamba from senior management personnel, effective September 30, 2024.",
+          "source_page": 108,
+          "evidence": "Changes during fiscal 2025: Senior management personnel - Resignations: Hemant Lamba, September 30, 2024."
+        }
+      ],
+      "sustainability_esg": [
+        {
+          "finding": "Achieved carbon neutrality for the sixth consecutive year since fiscal 2020.",
+          "source_page": 66,
+          "evidence": "Our focused approach on energy efficiency, renewable energy and carbon offset projects over the years resulted in the Company achieving carbon neutrality for six years in a row since fiscal 2020, across all emissions."
+        },
+        {
+          "finding": "Implemented Life Cycle Assessment (LCA) as an essential indicator for all new buildings in fiscal 2025 to address embodied carbon.",
+          "source_page": 27,
+          "evidence": "LCA has been an essential indicator for all our new buildings in fiscal 2025."
+        }
+      ],
+      "workforce_developments": [
+        {
+          "finding": "Scaled digital reskilling program to include generative AI courses, resulting in over 270,000 AI-aware employees.",
+          "source_page": 21,
+          "evidence": "We invested in and scaled our digital reskilling program globally to include the latest generative AI courses. Over 2,70,000 of our employees today are AI-aware."
+        },
+        {
+          "finding": "Expanded the 'Constellation' succession-enabling program to include more high-potential emerging leaders.",
+          "source_page": 80,
+          "evidence": "The highly successful succession-enabling Constellation program was expanded to include more high potential emerging leaders."
+        }
+      ]
+    },
+    {
+      "company": "HCLTech",
+      "fiscal_year": "FY2024",
+      "source_documents": [
+        "hcltech_fy24.pdf"
+      ],
+      "evidence_chunks_used": 40,
+      "strategic_changes": [
+        {
+          "finding": "Launched HCLTech AI Force and HCLTech Enterprise AI Foundry to accelerate AI-led business transformation.",
+          "source_page": 74,
+          "evidence": "AI adds more power to our services and products, reflected in our recent launch of HCLTech AI Force and HCLTech Enterprise AI Foundry to accelerate AI-led business transformation journey."
+        },
+        {
+          "finding": "Acquired ASAP Group to enhance capabilities in automotive engineering services.",
+          "source_page": 92,
+          "evidence": "This year, we acquired ASAP Group, an automotive engineering services provider focused on future-oriented technologies such as autonomous driving, e-mobility and connectivity."
+        }
+      ],
+      "management_changes": [
+        {
+          "finding": "Resignation of Appa Rao V, Chief Delivery Officer – Nearshore & New Vistas locations.",
+          "source_page": 175,
+          "evidence": "Appa Rao V, Chief Delivery Officer – Nearshore & New Vistas locations, resigned w.e.f. November 22, 2023."
+        },
+        {
+          "finding": "Resignation of Anand Birje, Head of Digital Business Services.",
+          "source_page": 175,
+          "evidence": "Anand Birje, Head of Digital Business Services, resigned w.e.f. May 05, 2023."
+        }
+      ],
+      "sustainability_esg": [
+        {
+          "finding": "Committed to achieving net-zero emissions by 2040.",
+          "source_page": 88,
+          "evidence": "Achieve net-zero emissions by 2040."
+        },
+        {
+          "finding": "Transitioned 19.02% of global energy requirements to renewable sources.",
+          "source_page": 135,
+          "evidence": "By transitioning electricity supply to renewable sources globally, the Company has so far transitioned 19.02% of its energy requirement to renewable sources which is equal to 52,056.41 MWh."
+        }
+      ],
+      "workforce_developments": [
+        {
+          "finding": "Launched 'Certified People Manager Program' to equip managers with inclusive leadership skills.",
+          "source_page": 48,
+          "evidence": "Launched in April 2023, this certification program equips people managers with an effective mindset, skillset and toolset to foster inclusive leadership and do meaningful, development-focused performance conversations."
+        },
+        {
+          "finding": "Implemented 'TalentXchange', an AI-powered internal talent marketplace for mobility.",
+          "source_page": 81,
+          "evidence": "TalentXchange is our internal talent marketplace to facilitate talent mobility and internal fulfillment."
+        },
+        {
+          "finding": "Launched 'MentorMe' platform to democratize learning and mentorship.",
+          "source_page": 81,
+          "evidence": "The MentorMe and Aspire platforms help democratize learning and enable access to expert guidance."
+        }
+      ]
+    },
+    {
+      "company": "HCLTech",
+      "fiscal_year": "FY2025",
+      "source_documents": [
+        "hcltech_fy25.pdf"
+      ],
+      "evidence_chunks_used": 47,
+      "strategic_changes": [
+        {
+          "finding": "Integration of ITBS and ERS sales teams into a unified services go-to-market (GTM) structure.",
+          "source_page": 85,
+          "evidence": "We integrated our ITBS and ERS sales teams to form a unified services go-to-market (GTM) structure, which significantly enhances client relations, service capabilities and cross-selling opportunities."
+        },
+        {
+          "finding": "Implementation of 'Project Ascend' to drive margin expansion and operational efficiency.",
+          "source_page": 85,
+          "evidence": "Alongside these vectors, Project Ascend, an internal transformative initiative aimed at achieving margin expansion to fund growth is being implemented."
+        },
+        {
+          "finding": "Expansion of New Vistas locations to Kochi and Patna in India.",
+          "source_page": 87,
+          "evidence": "This year we have expanded our New Vista locations by opening centers in Kochi and Patna in India."
+        }
+      ],
+      "management_changes": [
+        {
+          "finding": "Appointment of Mr. Shiv Kumar Walia as Chief Financial Officer.",
+          "source_page": 169,
+          "evidence": "Mr. Shiv Kumar Walia was appointed as the Chief Financial Officer and Key Managerial Personnel of the Company w.e.f. September 6, 2024 in place of Mr. Prateek Aggarwal, who resigned."
+        },
+        {
+          "finding": "Appointment of Ms. Lee Fang Chew as an Independent Director.",
+          "source_page": 156,
+          "evidence": "Ms. Lee Fang Chew (DIN - 02112309) was appointed as an Independent Director of the Company, not liable to retire by rotation, for a term of five consecutive years, w.e.f. April 25, 2024 to April 24, 2029."
+        },
+        {
+          "finding": "Cessation of five Independent Directors upon completion of their tenures.",
+          "source_page": 156,
+          "evidence": "Mr. S. Madhavan, Dr. Mohan Chellappa, Ms. Robin Ann Abrams, Dr. S. Shankara Sastry and Mr. R. Srinivasan, ceased to be the directors of the Company on completion of their respective tenures as Independent Directors w.e.f. August 5, 2024."
+        }
+      ],
+      "sustainability_esg": [
+        {
+          "finding": "Establishment of the Office of Responsible AI and Governance (ORAIG).",
+          "source_page": 70,
+          "evidence": "HCLTech has established the Office of Responsible AI and Governance (ORAIG) to ensure that AI systems are developed and deployed ethically and responsibly."
+        },
+        {
+          "finding": "Achievement of 100% TRUE Zero Waste to Landfill Platinum certification for all campuses in India.",
+          "source_page": 90,
+          "evidence": "Through our strategic initiatives towards our environmental goals, we have achieved 100% TRUE Zero Waste to Landfill Platinum certification for all campuses in India."
+        },
+        {
+          "finding": "Reduction of Scope 1 and 2 emissions by 46% from the FY20 baseline.",
+          "source_page": 90,
+          "evidence": "reduced our Scope 1 and 2 emissions by 46% from our baseline of FY20."
+        }
+      ],
+      "workforce_developments": [
+        {
+          "finding": "Training of 106,000 employees in digital skills.",
+          "source_page": 126,
+          "evidence": "1,06,000 employees were also trained in digital skills."
+        },
+        {
+          "finding": "Hiring of over 4,400 employees through the New Vistas program in FY25.",
+          "source_page": 69,
+          "evidence": "In FY25, HCLTech hired more than 4,400 employees through the New Vistas program, out of which over 1,300 were women and over 1,900 were fresh graduates."
+        },
+        {
+          "finding": "Completion of Certified People Manager Program levels by over 14,900 managers.",
+          "source_page": 69,
+          "evidence": "In FY25, over 6,000 managers completed the foundation level, over 4,500 finished the intermediate level while over 4,400 managers accomplished the advanced level."
+        }
+      ]
+    }
+  ]
+}
