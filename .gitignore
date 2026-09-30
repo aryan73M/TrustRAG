@@ -23,9 +23,11 @@ data/*
 !data/quantitative_analysis.json
 !data/TrustRAG_Benchmarking_Report.xlsx
 
-# Keep source PDFs and large RAG chunks out of GitHub
+# Keep the RAG corpus required by Streamlit Cloud
+!data/chunks_v2.json
+
+# Keep source PDFs out of GitHub
 *.pdf
-data/chunks_v2.json
 
 uploads/
 temp/
